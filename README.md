@@ -8,6 +8,12 @@ _Official Python Wrapper for Wibu API._
 pip install wibuapi
 ```
 
+## Update to latest:
+
+```
+pip install -U wibuapi
+```
+
 ## Examples:
 _For examples go to [examples dir](https://github.com/zYxDevs/wibu-api-py/blob/main/examples)._
 
