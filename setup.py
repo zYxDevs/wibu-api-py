@@ -6,8 +6,8 @@ with open("README.md", "r") as txt:
 
 setuptools.setup(
     name="wibuapi",
-    version="0.0.1",
-    description="Wibu API Python Wrapper",
+    version="0.0.2",
+    description="Official Python Wrapper for Wibu API.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
