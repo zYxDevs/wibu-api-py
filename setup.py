@@ -13,7 +13,7 @@ setuptools.setup(
     license="License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
     author="Yoga Pranata",
     author_email="yoga@zyxdevs.eu.org",
-    url="https://github.com/zYxDevs/wibu-api-py.git",
+    url="https://github.com/zYxDevs/wibu-api-py",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
