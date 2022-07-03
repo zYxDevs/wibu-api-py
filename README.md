@@ -9,7 +9,7 @@ pip install wibuapi
 ```
 
 ## Examples:
-_For examples go to [examples dir](/examples)._
+_For examples go to [examples dir](https://github.com/zYxDevs/wibu-api-py/blob/main/examples)._
 
 ## Copyright:
 **Copyright 2022 by [Yoga Pranata](https://t.me/Yoga_CIC).**
