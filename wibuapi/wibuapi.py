@@ -1,7 +1,7 @@
 from requests import get
 
 
-class WibuAPI():
+class WibuAPI:
     def __init__(self):
         self.base_url = "https://wibu-api.eu.org/api"
         self.deprecated_url = "https://api.wibu-api.eu.org/api"
@@ -11,7 +11,7 @@ class WibuAPI():
             url = f"{self.base_url}/anime/lendrive?link={link}"
             response = get(url, timeout=5)
             return response.json()
-        except  Exception as e:
+        except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
     def anichin(self, link):
@@ -19,7 +19,7 @@ class WibuAPI():
             url = f"{self.base_url}/anime/anichin?link={link}"
             response = get(url, timeout=5)
             return response.json()
-        except  Exception as e:
+        except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
     def kusonime(self, link):
@@ -27,7 +27,7 @@ class WibuAPI():
             url = f"{self.base_url}/anime/kusonime?link={link}"
             response = get(url, timeout=5)
             return response.json()
-        except  Exception as e:
+        except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
     def doronime(self, link):
@@ -35,7 +35,7 @@ class WibuAPI():
             url = f"{self.base_url}/anime/doronime?link={link}"
             response = get(url, timeout=5)
             return response.json()
-        except  Exception as e:
+        except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
     def rawkuma(self, link):
@@ -43,7 +43,7 @@ class WibuAPI():
             url = f"{self.base_url}/manga/rawkuma?link={link}"
             response = get(url, timeout=5)
             return response.json()
-        except  Exception as e:
+        except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
     def doudesu(self, link):
@@ -51,7 +51,7 @@ class WibuAPI():
             url = f"{self.base_url}/manga/doudesu?link={link}"
             response = get(url, timeout=5)
             return response.json()
-        except  Exception as e:
+        except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
     def anipics(self, category, tags):
@@ -63,7 +63,7 @@ class WibuAPI():
             url = f"{self.base_url}/anime/{category}/{tags}"
             response = get(url, timeout=5)
             return response.json()
-        except  Exception as e:
+        except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
     def genshin(self, path, query):
@@ -87,7 +87,7 @@ class WibuAPI():
                 return "Not a valid path.\nAvailable path: user, character, enemy, artifact, element, weapon"
             response = get(url, timeout=5)
             return response.json()
-        except  Exception as e:
+        except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
     def brawl(self, path, query):
@@ -109,7 +109,7 @@ class WibuAPI():
                 return "Not a valid path.\nAvailable path: player, playerlog, club, clubmember, event"
             response = get(url, timeout=5)
             return response.json()
-        except  Exception as e:
+        except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
     def google(self, query):
@@ -117,7 +117,7 @@ class WibuAPI():
             url = f"{self.base_url}/google/search?query={query}"
             response = get(url, timeout=5)
             return response.json()
-        except  Exception as e:
+        except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
     def lk21(self, query):
@@ -125,5 +125,5 @@ class WibuAPI():
             url = f"{self.base_url}/lk21/search?title={query}"
             response = get(url, timeout=5)
             return response.json()
-        except  Exception as e:
+        except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
