@@ -73,15 +73,15 @@ class WibuAPI:
         try:
             if path == "user":
                 url = f"{self.base_url}/game/gi/user?uid={query}"
-            if path == "character":
+            elif path == "character":
                 url = f"{self.base_url}/game/gi/character?name={query}"
-            if path == "enemy":
+            elif path == "enemy":
                 url = f"{self.base_url}/game/gi/enemy?name={query}"
-            if path == "artifact":
+            elif path == "artifact":
                 url = f"{self.base_url}/game/gi/artifact?name={query}"
-            if path == "element":
+            elif path == "element":
                 url = f"{self.base_url}/game/gi/element?name={query}"
-            if path == "weapon":
+            elif path == "weapon":
                 url = f"{self.base_url}/game/gi/weapon?name={query}"
             else:
                 return "Not a valid path.\nAvailable path: user, character, enemy, artifact, element, weapon"
@@ -97,13 +97,13 @@ class WibuAPI:
         try:
             if path == "player":
                 url = f"{self.deprecated_url}/game/brawl/player?playerTag={query}"
-            if path == "playerlog":
+            elif path == "playerlog":
                 url = f"{self.deprecated_url}/game/brawl/player/log?playerTag={query}"
-            if path == "club":
+            elif path == "club":
                 url = f"{self.deprecated_url}/game/brawl/club?clubTag={query}"
-            if path == "clubmember":
+            elif path == "clubmember":
                 url = f"{self.deprecated_url}/game/brawl/club/member?clubTag={query}"
-            if path == "event":
+            elif path == "event":
                 url = f"{self.deprecated_url}/game/brawl/event"
             else:
                 return "Not a valid path.\nAvailable path: player, playerlog, club, clubmember, event"
