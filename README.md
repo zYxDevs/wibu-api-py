@@ -1,5 +1,5 @@
 # Wibu-API-Py
-<img src='https://img.shields.io/github/repo-size/zYxDevs/wibu-api-py?style=flat-square'>  <img src='https://img.shields.io/github/languages/top/zYxDevs/wibu-api-py?style=flat-square'>  [![CodeFactor](https://www.codefactor.io/repository/github/zYxDevs/wibu-api-py/badge)](https://www.codefactor.io/repository/github/zYxDevs/wibu-api-py)
+[![Repo Size](https://img.shields.io/github/repo-size/zYxDevs/wibu-api-py?style=flat-square)](https://github.com/zYxDevs/wibu-api-py)  [![Languages](https://img.shields.io/github/languages/top/zYxDevs/wibu-api-py?style=flat-square)](https://github.com/zYxDevs/wibu-api-py)  [![CodeFactor](https://www.codefactor.io/repository/github/zYxDevs/wibu-api-py/badge)](https://www.codefactor.io/repository/github/zYxDevs/wibu-api-py)
 
 _Official Python Wrapper for Wibu API._
 
