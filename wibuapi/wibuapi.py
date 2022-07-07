@@ -79,7 +79,9 @@ class WibuAPI:
         """
         try:
             if tags not in ["ahegao", "waifu", "neko", "trap", "bj"]:
-                return "Not a valid tags.\nAvailable tags: ahegao, waifu, neko, trap, bj"
+                return (
+                    "Not a valid tags.\nAvailable tags: ahegao, waifu, neko, trap, bj"
+                )
             elif category != "nsfw":
                 return "Not a valid category.\nAvailable category: nsfw"
             url = f"{self.base_url}/anime/{category}/{tags}"
