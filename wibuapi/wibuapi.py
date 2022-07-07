@@ -12,7 +12,7 @@ class WibuAPI:
             response = get(url, timeout=15)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     """
     def anichin(self, link):
@@ -30,7 +30,7 @@ class WibuAPI:
             response = get(url, timeout=15)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def doronime(self, link):
         try:
@@ -38,7 +38,7 @@ class WibuAPI:
             response = get(url, timeout=15)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def rawkuma(self, link):
         try:
@@ -46,7 +46,7 @@ class WibuAPI:
             response = get(url, timeout=15)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def westmanga(self, link):
         try:
@@ -54,7 +54,7 @@ class WibuAPI:
             response = get(url, timeout=15)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def doujindesu(self, link):
         try:
@@ -62,7 +62,7 @@ class WibuAPI:
             response = get(url, timeout=15)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def wibusubs(self, link):
         try:
@@ -70,7 +70,7 @@ class WibuAPI:
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def anipics(self, category, tags):
         """
@@ -88,23 +88,23 @@ class WibuAPI:
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def genshin(self, path, query):
         """
         Available path: user, character, enemy, artifact, element, weapon
         """
         try:
-            if path == "user":
-                url = f"{self.base_url}/game/gi/user?uid={query}"
+            if path == "artifact":
+                url = f"{self.base_url}/game/gi/artifact?name={query}"
             elif path == "character":
                 url = f"{self.base_url}/game/gi/character?name={query}"
-            elif path == "enemy":
-                url = f"{self.base_url}/game/gi/enemy?name={query}"
-            elif path == "artifact":
-                url = f"{self.base_url}/game/gi/artifact?name={query}"
             elif path == "element":
                 url = f"{self.base_url}/game/gi/element?name={query}"
+            elif path == "enemy":
+                url = f"{self.base_url}/game/gi/enemy?name={query}"
+            elif path == "user":
+                url = f"{self.base_url}/game/gi/user?uid={query}"
             elif path == "weapon":
                 url = f"{self.base_url}/game/gi/weapon?name={query}"
             else:
@@ -112,29 +112,29 @@ class WibuAPI:
             response = get(url, timeout=15)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def brawl(self, path, query):
         """
         Available path: player, playerlog, club, clubmember, event
         """
         try:
-            if path == "player":
-                url = f"{self.deprecated_url}/game/brawl/player?playerTag={query}"
-            elif path == "playerlog":
-                url = f"{self.deprecated_url}/game/brawl/player/log?playerTag={query}"
-            elif path == "club":
+            if path == "club":
                 url = f"{self.deprecated_url}/game/brawl/club?clubTag={query}"
             elif path == "clubmember":
                 url = f"{self.deprecated_url}/game/brawl/club/member?clubTag={query}"
             elif path == "event":
                 url = f"{self.deprecated_url}/game/brawl/event"
+            elif path == "player":
+                url = f"{self.deprecated_url}/game/brawl/player?playerTag={query}"
+            elif path == "playerlog":
+                url = f"{self.deprecated_url}/game/brawl/player/log?playerTag={query}"
             else:
                 return "Not a valid path.\nAvailable path: player, playerlog, club, clubmember, event"
             response = get(url, timeout=15)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def google(self, query):
         try:
@@ -142,7 +142,7 @@ class WibuAPI:
             response = get(url, timeout=15)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def lk21(self, query):
         try:
@@ -150,4 +150,4 @@ class WibuAPI:
             response = get(url, timeout=15)
             return response.json()
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
