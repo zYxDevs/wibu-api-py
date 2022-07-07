@@ -14,6 +14,7 @@ class WibuAPI:
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
+"""
     def anichin(self, link):
         try:
             url = f"{self.base_url}/anime/anichin?link={link}"
@@ -21,6 +22,7 @@ class WibuAPI:
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
+"""
 
     def kusonime(self, link):
         try:
@@ -46,9 +48,25 @@ class WibuAPI:
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
+    def westmanga(self, link):
+        try:
+            url = f"{self.base_url}/manga/westmanga?link={link}"
+            response = get(url, timeout=5)
+            return response.json()
+        except Exception as e:
+            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+
     def doudesu(self, link):
         try:
             url = f"{self.base_url}/manga/doudesu?link={link}"
+            response = get(url, timeout=5)
+            return response.json()
+        except Exception as e:
+            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+
+    def wibusubs(self, link):
+        try:
+            url = f"{self.base_url}/drama/wibusubs?link={link}"
             response = get(url, timeout=5)
             return response.json()
         except Exception as e:
@@ -60,6 +78,10 @@ class WibuAPI:
         Available tags: ahegao, waifu, neko, trap, bj
         """
         try:
+            if tags not in ["ahegao", "waifu", "neko", "trap", "bj"]:
+                return "Not a valid tags.\nAvailable tags: ahegao, waifu, neko, trap, bj"
+            elif category != "nsfw":
+                return "Not a valid category.\nAvailable category: nsfw"
             url = f"{self.base_url}/anime/{category}/{tags}"
             response = get(url, timeout=5)
             return response.json()
