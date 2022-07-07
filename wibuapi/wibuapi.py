@@ -9,25 +9,25 @@ class WibuAPI:
     def lendrive(self, link):
         try:
             url = f"{self.base_url}/anime/lendrive?link={link}"
-            response = get(url, timeout=5)
+            response = get(url, timeout=15)
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
-"""
+    """
     def anichin(self, link):
         try:
             url = f"{self.base_url}/anime/anichin?link={link}"
-            response = get(url, timeout=5)
+            response = get(url, timeout=15)
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
-"""
+    """
 
     def kusonime(self, link):
         try:
             url = f"{self.base_url}/anime/kusonime?link={link}"
-            response = get(url, timeout=5)
+            response = get(url, timeout=15)
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
@@ -35,7 +35,7 @@ class WibuAPI:
     def doronime(self, link):
         try:
             url = f"{self.base_url}/anime/doronime?link={link}"
-            response = get(url, timeout=5)
+            response = get(url, timeout=15)
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
@@ -43,7 +43,7 @@ class WibuAPI:
     def rawkuma(self, link):
         try:
             url = f"{self.base_url}/manga/rawkuma?link={link}"
-            response = get(url, timeout=5)
+            response = get(url, timeout=15)
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
@@ -51,15 +51,15 @@ class WibuAPI:
     def westmanga(self, link):
         try:
             url = f"{self.base_url}/manga/westmanga?link={link}"
-            response = get(url, timeout=5)
+            response = get(url, timeout=15)
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
-    def doudesu(self, link):
+    def doujindesu(self, link):
         try:
             url = f"{self.base_url}/manga/doudesu?link={link}"
-            response = get(url, timeout=5)
+            response = get(url, timeout=15)
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
@@ -107,7 +107,7 @@ class WibuAPI:
                 url = f"{self.base_url}/game/gi/weapon?name={query}"
             else:
                 return "Not a valid path.\nAvailable path: user, character, enemy, artifact, element, weapon"
-            response = get(url, timeout=5)
+            response = get(url, timeout=15)
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
@@ -129,7 +129,7 @@ class WibuAPI:
                 url = f"{self.deprecated_url}/game/brawl/event"
             else:
                 return "Not a valid path.\nAvailable path: player, playerlog, club, clubmember, event"
-            response = get(url, timeout=5)
+            response = get(url, timeout=15)
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
@@ -137,7 +137,7 @@ class WibuAPI:
     def google(self, query):
         try:
             url = f"{self.base_url}/google/search?query={query}"
-            response = get(url, timeout=5)
+            response = get(url, timeout=15)
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
@@ -145,7 +145,7 @@ class WibuAPI:
     def lk21(self, query):
         try:
             url = f"{self.base_url}/lk21/search?title={query}"
-            response = get(url, timeout=5)
+            response = get(url, timeout=15)
             return response.json()
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
