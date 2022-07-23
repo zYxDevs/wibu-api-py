@@ -7,6 +7,14 @@ class WibuAPI:
         self.base_url = "https://wibu-api.eu.org/api"
         self.deprecated_url = "https://api.wibu-api.eu.org/api"
 
+    def status(self):
+        try:
+            url = f"{self.base_url}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
     def lendrive(self, link: str):
         try:
             url = f"{self.base_url}/anime/lendrive?link={link}"
@@ -184,6 +192,46 @@ class WibuAPI:
     def lk21(self, query: str):
         try:
             url = f"{self.base_url}/lk21/search?title={query}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def ud(self, query: str):
+        try:
+            url = f"{self.base_url}/etc/ud?query={query}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def wall(self, query: str):
+        try:
+            url = f"{self.base_url}/etc/wallhd?query={query}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def youtube(self, url: str):
+        try:
+            url = f"{self.base_url}/etc/youtube?query={url}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def device(self, query: str):
+        try:
+            url = f"{self.base_url}/etc/gsm/search?query={query}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def slug(self, query: str):
+        try:
+            url = f"{self.base_url}/etc/gsm/slug?query={query}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
