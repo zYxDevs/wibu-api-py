@@ -7,14 +7,6 @@ class WibuAPI:
         self.base_url = "https://wibu-api.eu.org/api"
         self.deprecated_url = "https://api.wibu-api.eu.org/api"
 
-    def status(self):
-        try:
-            url = f"{self.base_url}"
-            response = get(url, timeout=15).json()
-            return dumps(response, indent=2)
-        except Exception as e:
-            return f"An error occured report on @YBotsSupport\n\n{e}"
-
     def lendrive(self, link: str):
         try:
             url = f"{self.base_url}/anime/lendrive?link={link}"
