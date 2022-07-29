@@ -21,7 +21,9 @@ class zYxDevs:
         """
         try:
             response = get(url)
-            parse = re.findall("window.location[ ]{0,}=[ ]{0,}[(|\)](.*?)[(|\)]", response.text)[0].replace('"', '')
+            parse = re.findall(
+                "window.location[ ]{0,}=[ ]{0,}[(|\)](.*?)[(|\)]", response.text
+            )[0].replace('"', "")
             return parse
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
