@@ -138,7 +138,7 @@ class WibuAPI:
 
     def brawlClub(self, tag: str):
         try:
-            url = f"{self.deprecated_url}/game/brawl/club?clubTag={query}"
+            url = f"{self.deprecated_url}/game/brawl/club?clubTag={tag}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
@@ -170,7 +170,7 @@ class WibuAPI:
 
     def brawlPlayerLog(self, tag: str):
         try:
-            url = f"{self.deprecated_url}/game/brawl/player/log?playerTag={query}"
+            url = f"{self.deprecated_url}/game/brawl/player/log?playerTag={tag}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
