@@ -1,3 +1,6 @@
+# (c) 2022-2023 Yoga Pranata a.k.a zYxDevs
+# This file contains all api path from wibuapi.
+
 from json import dumps
 from requests import get
 
