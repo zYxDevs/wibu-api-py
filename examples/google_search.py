@@ -1,3 +1,6 @@
+# (c) 2022-2023 Yoga Pranata a.k.a zYxDevs
+# Google search example code.
+
 from wibuapi import WibuAPI
 
 
