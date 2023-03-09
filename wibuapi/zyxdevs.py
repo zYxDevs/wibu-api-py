@@ -10,6 +10,8 @@ class Etc:
     def __init__(self):
         self.base_url = "https://wibu-api.eu.org/api"
         self.deprecated_url = "https://api.wibu-api.eu.org/api"
+
+    def stats(self):
         try:
             resp1 = get(self.base_url, timeout=15).json()
             resp2 = get(self.deprecated_url, timeout=15).json()
