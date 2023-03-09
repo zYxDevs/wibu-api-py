@@ -18,4 +18,4 @@ pip install -U wibuapi
 _For examples go to [examples dir](https://github.com/zYxDevs/wibu-api-py/blob/main/examples)._
 
 ## Copyright:
-**Copyright 2022 by [Yoga Pranata](https://t.me/Yoga_CIC).**
+**(c) 2022-2023 by [Yoga Pranata](https://t.me/Yoga_CIC).**
