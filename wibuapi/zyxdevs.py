@@ -14,7 +14,7 @@ class Etc:
     def stats(self, site: str):
         try:
             url = self.base_url
-            if site == ["deprecated", "d"]:
+            if site in ["deprecated", "d"]:
                 url = self.deprecated_url
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
