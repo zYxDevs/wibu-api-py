@@ -1,9 +1,12 @@
+# (c) 2022-2023 Yoga Pranata a.k.a zYxDevs
+# This file contains some learning stuff, don't care it.
+
 import re
 from json import dumps
 from requests import get
 
 
-class zYxDevs:
+class Etc:
     def stats(site: str):
         try:
             url = "https://wibu-api.eu.org/api"
