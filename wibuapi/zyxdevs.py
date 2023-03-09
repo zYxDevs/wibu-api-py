@@ -11,14 +11,12 @@ class Etc:
         self.base_url = "https://wibu-api.eu.org/api"
         self.deprecated_url = "https://api.wibu-api.eu.org/api"
 
-    def stats(self, site: str):
+    def stats(self):
         try:
-            if site(str) in ["main", "m"]:
-                url = self.base_url
-            if site(str) in ["deprecated", "d"]:
-                url = self.deprecated_url
-            response = get(url, timeout=15).json()
-            return dumps(response, indent=2)
+            resp1 = get(self.base_url, timeout=15).json()
+            resp2 = get(self.deprecated_url, timeout=15).json()
+            res = [{"updated": resp1}, {"deprecated": resp2}]
+            return dumps(res, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
