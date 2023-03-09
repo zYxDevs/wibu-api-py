@@ -228,3 +228,19 @@ class WibuAPI:
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def b64encode(self, query: str):
+        try:
+            url = f"{self.base_url}/encode/base64?query={query}"
+            response = get(url, timeout=5).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def b64decode(self, query: str):
+        try:
+            url = f"{self.base_url}/decode/base64?query={query}"
+            response = get(url, timeout=5).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
