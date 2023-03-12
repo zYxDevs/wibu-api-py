@@ -138,6 +138,9 @@ class WibuAPI:
 
     def brawlClub(self, tag: str):
         try:
+            if "#" not in tag:
+                tag = f"%23{tag}"
+            tag = tag.replace("#", "%23")
             url = f"{self.deprecated_url}/game/brawl/club?clubTag={tag}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
@@ -146,6 +149,9 @@ class WibuAPI:
 
     def brawlClubMember(self, tag: str):
         try:
+            if "#" not in tag:
+                tag = f"%23{tag}"
+            tag = tag.replace("#", "%23")
             url = f"{self.deprecated_url}/game/brawl/club/member?clubTag={tag}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
@@ -162,6 +168,9 @@ class WibuAPI:
 
     def brawlPlayer(self, tag: str):
         try:
+            if "#" not in tag:
+                tag = f"%23{tag}"
+            tag = tag.replace("#", "%23")
             url = f"{self.deprecated_url}/game/brawl/player?playerTag={tag}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
@@ -170,6 +179,9 @@ class WibuAPI:
 
     def brawlPlayerLog(self, tag: str):
         try:
+            if "#" not in tag:
+                tag = f"%23{tag}"
+            tag = tag.replace("#", "%23")
             url = f"{self.deprecated_url}/game/brawl/player/log?playerTag={tag}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
