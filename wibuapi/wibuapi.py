@@ -222,7 +222,7 @@ class WibuAPI:
 
     def youtube(self, url: str):
         try:
-            url = f"{self.base_url}/etc/youtube?query={url}"
+            url = f"{self.base_url}/etc/youtube?url={url}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
