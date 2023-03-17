@@ -18,6 +18,14 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
+    def donghua(self, link: str):
+        try:
+            url = f"{self.base_url}/anime/donghua?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
     """
     def anichin(self, link: str):
         try:
