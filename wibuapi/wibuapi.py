@@ -10,9 +10,8 @@ class WibuAPI:
         self.base_url = "https://wibu-api.eu.org/api"
         self.deprecated_url = "https://api.wibu-api.eu.org/api"
 
-
     def lendrive(self, link: str):
-        """ works with batch, bd, and single eps link
+        """works with batch, bd, and single eps link
         https://lendrive.web.id/tondemo-skill-de-isekai-hourou-meshi-ep-04-dual-subs-x265-hevc-subtitle-indonesia-english/
         """
         try:
@@ -22,9 +21,8 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def donghua(self, link: str):
-        """ works with batch, bd, and single eps link
+        """works with batch, bd, and single eps link
         https://donghua.web.id/soul-land-season-2-episode-224-250
         """
         try:
@@ -33,7 +31,6 @@ class WibuAPI:
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
-
 
     """ off, due to cloudflare v2 captcha
     def anichin(self, link: str):
@@ -45,9 +42,8 @@ class WibuAPI:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
     """
 
-
     def kusonime(self, link: str):
-        """ works with batch, bd, and single eps link
+        """works with batch, bd, and single eps link
         https://kusonime.com/isekai-ojisan-batch-subtitle-indonesia/
         """
         try:
@@ -57,9 +53,8 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def doronime(self, link: str):
-        """ works with batch, bd, and single eps link
+        """works with batch, bd, and single eps link
         https://doronime.id/anime/om-ke-isekai/batch
         """
         try:
@@ -69,9 +64,8 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def rawkuma(self, link: str):
-        """ works with list and single chapter
+        """works with list and single chapter
         list: https://rawkuma.com/manga/guilty-circle/
         single: https://rawkuma.com/guilty-circle-chapter-83/
         """
@@ -82,9 +76,8 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def westmanga(self, link: str):
-        """ works with list and single chapter
+        """works with list and single chapter
         list: https://westmanga.info/manga/kaifuku-jutsushi-no-yarinaoshi/
         single: https://westmanga.info/kaifuku-jutsushi-no-yarinaoshi-chapter-52-1-bahasa-indonesia/
         """
@@ -95,9 +88,8 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def komikindo(self, link: str):
-        """ work with list and single chapter
+        """work with list and single chapter
         list: https://komikindo.co/manga/yuusha-ni-zenbu-ubawareta-ore-wa-yuusha-no-hahaoya-to-party-wo-kumimashita/
         single: https://komikindo.co/yuusha-ni-zenbu-ubawareta-ore-wa-yuusha-no-hahaoya-to-party-wo-kumimashita-chapter-04/
         """
@@ -108,9 +100,8 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def doujindesu(self, link: str):
-        """ works with list and single chapter
+        """works with list and single chapter
         list: https://212.32.226.234/manga/i-cant-stand-it-ajumma/
         single: https://212.32.226.234/i-cant-stand-it-ajumma-chapter-20/
         """
@@ -121,9 +112,8 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def wibusubs(self, link: str):
-        """ work with single post link (may bug sometimes)
+        """work with single post link (may bug sometimes)
         https://www.wibusubs.moe/2023/03/brother-trap-2023-09-tamat-subtitle.html
         """
         try:
@@ -132,7 +122,6 @@ class WibuAPI:
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
-
 
     def anipics(self, category: str, tags: str):
         """
@@ -146,7 +135,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def giUser(self, uid: int):
         try:
             url = f"{self.base_url}/game/gi/user?uid={uid}"
@@ -154,7 +142,6 @@ class WibuAPI:
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
-
 
     def giWeapon(self, query: str):
         try:
@@ -164,7 +151,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def giEnemy(self, query: str):
         try:
             url = f"{self.base_url}/game/gi/enemy?name={query}"
@@ -172,7 +158,6 @@ class WibuAPI:
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
-
 
     def giElement(self, query: str):
         try:
@@ -182,7 +167,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def giCharacter(self, query: str):
         try:
             url = f"{self.base_url}/game/gi/character?name={query}"
@@ -191,7 +175,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def giArtifact(self, query: str):
         try:
             url = f"{self.base_url}/game/gi/artifact?name={query}"
@@ -199,7 +182,6 @@ class WibuAPI:
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
-
 
     def brawlClub(self, tag: str):
         try:
@@ -212,7 +194,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def brawlClubMember(self, tag: str):
         try:
             if "#" not in tag:
@@ -224,7 +205,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def brawlEvent(self):
         try:
             url = f"{self.deprecated_url}/game/brawl/event"
@@ -232,7 +212,6 @@ class WibuAPI:
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
-
 
     def brawlPlayer(self, tag: str):
         try:
@@ -245,7 +224,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def brawlPlayerLog(self, tag: str):
         try:
             if "#" not in tag:
@@ -257,7 +235,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def google(self, query: str):
         try:
             url = f"{self.base_url}/google/search?query={query}"
@@ -265,7 +242,6 @@ class WibuAPI:
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
-
 
     def lk21(self, query: str):
         try:
@@ -275,7 +251,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def ud(self, query: str):
         try:
             url = f"{self.base_url}/etc/ud?query={query}"
@@ -283,7 +258,6 @@ class WibuAPI:
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
-
 
     def wall(self, query: str):
         try:
@@ -293,10 +267,9 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def youtube(self, url: str):
-        """ tested on youtube video link, other not tested yet
-        https://www.youtube.com/watch?v=a1V0UbBNliM 
+        """tested on youtube video link, other not tested yet
+        https://www.youtube.com/watch?v=a1V0UbBNliM
         """
         try:
             url = f"{self.base_url}/etc/youtube?url={url}"
@@ -304,7 +277,6 @@ class WibuAPI:
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
-
 
     def device(self, query: str):
         try:
@@ -314,7 +286,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def slug(self, query: str):
         try:
             url = f"{self.base_url}/etc/gsm/slug?query={query}"
@@ -323,7 +294,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def b64encode(self, query: str):
         try:
             url = f"{self.base_url}/encode/base64?query={query}"
@@ -331,7 +301,6 @@ class WibuAPI:
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
-
 
     def b64decode(self, query: str):
         try:
