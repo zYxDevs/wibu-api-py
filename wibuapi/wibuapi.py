@@ -123,6 +123,18 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
+    def kiryuu(self, link: str):
+        """work with list and single chapter
+        list: https://kiryuu.id/manga/a-rank-boukensha-no-slow-life/
+        single: https://kiryuu.id/a-rank-boukensha-no-slow-life-chapter-39-3/
+        """
+        try:
+            url = f"{self.base_url}/manga/kiryuu?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
     def doujindesu(self, link: str):
         """works with list and single chapter
         list: https://212.32.226.234/manga/i-cant-stand-it-ajumma/
