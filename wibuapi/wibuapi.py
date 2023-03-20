@@ -64,6 +64,17 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
+    def samehadaku(self, link: str):
+        """works with batch, bd, and single eps link
+        https://samehadaku.run/nierautomata-ver1-1a-episode-8/
+        """
+        try:
+            url = f"{self.base_url}/anime/samehadaku?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
     def rawkuma(self, link: str):
         """works with list and single chapter
         list: https://rawkuma.com/manga/guilty-circle/
