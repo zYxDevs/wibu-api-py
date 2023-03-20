@@ -111,6 +111,18 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
+    def mangatale(self, link: str):
+        """work with list and single chapter
+        list: https://mangatale.co/manga/dungeon-odyssey/
+        single: https://mangatale.co/dungeon-odyssey-chapter-40/
+        """
+        try:
+            url = f"{self.base_url}/manga/mangatale?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
     def doujindesu(self, link: str):
         """works with list and single chapter
         list: https://212.32.226.234/manga/i-cant-stand-it-ajumma/
