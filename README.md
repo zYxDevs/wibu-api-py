@@ -15,8 +15,16 @@ pip install -U wibuapi
 ```
 
 ## Telegram Bot:
-_I created official telegram bot to interacted with WibuAPI_
-check here: https://wibuapibot.t.me
+_I've created official telegram bot to interacted with WibuAPI_
+
+**Check here:**
+https://wibuapibot.t.me
+
+**Support group:**
+https://ybotssupport.t.me
+
+**Update channel:**
+https://spreadnetworks.t.me
 
 ## Examples:
 _For examples go to [examples dir](https://github.com/zYxDevs/wibu-api-py/blob/main/examples)._
