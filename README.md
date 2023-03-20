@@ -3,15 +3,20 @@
 
 _Official Python Wrapper for Wibu API._
 
-## How to install:
+## How to install
+#### Use pip
 ```
 pip install wibuapi
 ```
 
-## Update to latest:
-
+#### Get latest update
 ```
 pip install -U wibuapi
+```
+
+#### Install from repo
+```
+git clone https://github.com/zYxDevs/wibu-api-py && setup.py install
 ```
 
 ## Telegram Bot:
@@ -27,7 +32,64 @@ https://ybotssupport.t.me
 https://spreadnetworks.t.me
 
 ## Examples:
-_For examples go to [examples dir](https://github.com/zYxDevs/wibu-api-py/blob/main/examples)._
+#### Importing modules
+```python
+from wibuapi import WibuAPI
+api = WibuAPI()
+```
+
+#### [Lendrive](https://lendrive.web.id)
+```python
+# works with batch, bd, and single eps link
+url = "https://lendrive.web.id/tondemo-skill-de-isekai-hourou-meshi-ep-04-dual-subs-x265-hevc-subtitle-indonesia-english/"
+res = api.lendrive(url)
+print(res)
+```
+
+#### [Donghua](https://donghua.web.id)
+```python
+# works with batch, bd, and single eps link
+url = "https://donghua.web.id/soul-land-season-2-episode-224-250"
+res = api.donghua(url)
+print(res)
+```
+
+#### [Kusonime](https://kusonime.com)
+```python
+# works with batch, bd, and single eps link
+url = "https://kusonime.com/isekai-ojisan-batch-subtitle-indonesia/"
+res = api.kusonime(url)
+print(res)
+```
+
+#### [Doronime](https://doronime.id)
+```python
+# works with batch, bd, and single eps link
+url = "https://doronime.id/anime/om-ke-isekai/batch"
+res = api.doronime(url)
+print(res)
+```
+
+#### [Samehadaku](https://samehadaku.run)
+```python
+# works with batch, bd, and single eps link
+url = "https://lendrive.web.id/tondemo-skill-de-isekai-hourou-meshi-ep-04-dual-subs-x265-hevc-subtitle-indonesia-english/"
+res = api.lendrive(url)
+print(res)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Copyright:
 **(c) 2022-2023 by [Yoga Pranata](https://t.me/Yoga_CIC).**
