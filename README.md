@@ -15,8 +15,10 @@ pip install -U wibuapi
 ```
 
 #### Install from repo
-```
-git clone https://github.com/zYxDevs/wibu-api-py && setup.py install
+```bash
+root@zyxdevs:~ git clone https://github.com/zYxDevs/wibu-api-py wibuapi
+root@zyxdevs:~ cd wibuapi
+root@zyxdevs:~ python3 setup.py install
 ```
 
 ## Telegram Bot:
@@ -32,12 +34,13 @@ https://ybotssupport.t.me
 https://spreadnetworks.t.me
 
 ## Examples:
-#### Importing modules
+### Importing modules
 ```python
 from wibuapi import WibuAPI
 api = WibuAPI()
 ```
 
+### Anime
 #### [Lendrive](https://lendrive.web.id)
 ```python
 # works with batch, bd, and single eps link
@@ -73,8 +76,8 @@ print(res)
 #### [Samehadaku](https://samehadaku.run)
 ```python
 # works with batch, bd, and single eps link
-url = "https://lendrive.web.id/tondemo-skill-de-isekai-hourou-meshi-ep-04-dual-subs-x265-hevc-subtitle-indonesia-english/"
-res = api.lendrive(url)
+url = "https://samehadaku.run/nierautomata-ver1-1a-episode-8/"
+res = api.samehadaku(url)
 print(res)
 ```
 
