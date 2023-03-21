@@ -42,7 +42,16 @@ api = WibuAPI()
 ```
 
 ### Anime, Hentai, Donghua
-_For nekoPoi scrapper only works in [bot](#telegram-bot)._
+_For nekopoi scrapper only works in [bot](#telegram-bot)._
+
+| Website | Params |
+| :-: | :-: |
+| [Lendrive](#lendrive)| link |
+| [Donghua](#donghua) | link |
+| [Kusonime](#kusonime) | link |
+| [Doronime](#doronime) | link |
+| [Samehadaku](#samehadaku) | link |
+
 #### [Lendrive](https://lendrive.web.id)
 ```python
 # works with batch, bd, and single eps link
@@ -84,6 +93,16 @@ print(res)
 ```
 
 ### Manga, Doujin, Manhua, Manhwa
+
+| Website | Params |
+| :-: | :-: |
+| [Rawkuma](#rawkuma) | link |
+| [Westmanga](#westmanga) | link |
+| [Komikindo](#komikindo) | link |
+| [Mangatale](#mangatale) | link |
+| [Kiryuu](#kiryuu) | link |
+| [Doujindesu](#doujindesu) | link |
+
 #### [Rawkuma](https://rawkuma.com)
 ```python
 # works with list and single chapter
