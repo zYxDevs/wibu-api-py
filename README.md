@@ -3,15 +3,20 @@
 
 _Official Python Wrapper for Wibu API._
 
+[![wibu-api-py](https://socialify.git.ci/zYxDevs/wibu-api-py/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&language=1&logo=https%3A%2F%2F1000logos.net%2Fwp-content%2Fuploads%2F2021%2F04%2FTelegram-logo.png&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Light)](https://t.me/SpreadNetworks)
+
 ## How to install
 #### Use pip
 ```
-pip install wibuapi
+pip3 install wibuapi
+```
+```
+pip3 install git+https://github.com/zYxDevs/wibu-api-py
 ```
 
 #### Get latest update
 ```
-pip install -U wibuapi
+pip3 install -U wibuapi
 ```
 
 #### Install from repo
@@ -24,14 +29,10 @@ root@zyxdevs:~ python3 setup.py install
 ## Telegram Bot:
 _I've created official telegram bot to interacted with WibuAPI_
 
-**Check here:**
-https://wibuapibot.t.me
-
-**Support group:**
-https://ybotssupport.t.me
-
-**Update channel:**
-https://spreadnetworks.t.me
+[![WibuAPI Bot](https://img.shields.io/badge/WibuAPI-Bot-blue?&logo=telegram)](https://wibuapibot.t.me)
+[![Supoort Chat](https://img.shields.io/badge/Support-Chat-blue?&logo=telegram)](https://ybotssupport.t.me)
+[![Update Channel](https://img.shields.io/badge/Update-Channel-blue?&logo=telegram)](https://spreadnetworks.t.me)
+[![Yoga Pranata](https://img.shields.io/badge/Yoga-Pranata-blue?&logo=telegram)](https://t.me/Yoga_CIC)
 
 ## Examples:
 ### Importing modules
@@ -40,7 +41,8 @@ from wibuapi import WibuAPI
 api = WibuAPI()
 ```
 
-### Anime
+### Anime, Hentai, Donghua
+_For nekoPoi scrapper only works in [bot](#telegram-bot)._
 #### [Lendrive](https://lendrive.web.id)
 ```python
 # works with batch, bd, and single eps link
@@ -81,18 +83,68 @@ res = api.samehadaku(url)
 print(res)
 ```
 
+### Manga, Doujin, Manhua, Manhwa
+#### [Rawkuma](https://rawkuma.com)
+```python
+# works with list and single chapter
+# list: https://rawkuma.com/manga/guilty-circle/
+# single: https://rawkuma.com/guilty-circle-chapter-83/
+url = "https://rawkuma.com/manga/guilty-circle/"
+res = api.rawkuma(url)
+print(res)
+```
 
+#### [Westmanga](https://westmanga.info)
+```python
+# works with list and single chapter
+# list: https://westmanga.info/manga/kaifuku-jutsushi-no-yarinaoshi/
+# single: https://westmanga.info/kaifuku-jutsushi-no-yarinaoshi-chapter-52-1-bahasa-indonesia/
+url = "https://westmanga.info/manga/kaifuku-jutsushi-no-yarinaoshi/"
+res = api.westmanga(url)
+print(res)
+```
 
+#### [Komikindo](https://komikindo.co)
+```python
+# work with list and single chapter
+# list: https://komikindo.co/manga/yuusha-ni-zenbu-ubawareta-ore-wa-yuusha-no-hahaoya-to-party-wo-kumimashita/
+# single: https://komikindo.co/yuusha-ni-zenbu-ubawareta-ore-wa-yuusha-no-hahaoya-to-party-wo-kumimashita-chapter-04/
+url = "https://komikindo.co/manga/yuusha-ni-zenbu-ubawareta-ore-wa-yuusha-no-hahaoya-to-party-wo-kumimashita/"
+res = api.komikindo(url)
+print(res)
+```
 
+#### [Mangatale](https://mangatale.co)
+```python
+# work with list and single chapter
+# list: https://mangatale.co/manga/dungeon-odyssey/
+# single: https://mangatale.co/dungeon-odyssey-chapter-40/
+url = "https://mangatale.co/manga/dungeon-odyssey/"
+res = api.mangatale(url)
+print(res)
+```
 
+#### [Kiryuu](https://kiryuu.id)
+```python
+# work with list and single chapter
+# list: https://kiryuu.id/manga/a-rank-boukensha-no-slow-life/
+# single: https://kiryuu.id/a-rank-boukensha-no-slow-life-chapter-39-3/
+url = "https://kiryuu.id/manga/a-rank-boukensha-no-slow-life/"
+res = api.kiryuu(url)
+print(res)
+```
 
-
-
-
-
-
-
-
+#### [Doujindesu](https://212.32.226.234)
+```python
+# works with list and single chapter
+# list: https://212.32.226.234/manga/i-cant-stand-it-ajumma/
+# single: https://212.32.226.234/i-cant-stand-it-ajumma-chapter-20/
+url = "https://212.32.226.234/manga/i-cant-stand-it-ajumma/"
+res = api.doujindesu(url)
+print(res)
+```
 
 ## Copyright:
-**(c) 2022-2023 by [Yoga Pranata](https://t.me/Yoga_CIC).**
+```
+© 2022-2023 Yoga Pranata
+```
