@@ -135,6 +135,18 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
+    def masterkomik(self, link: str):
+        """work with list and single chapter
+        list: https://masterkomik.com/manga/max-level-player/
+        single: https://masterkomik.com/max-level-player-chapter-07/
+        """
+        try:
+            url = f"{self.base_url}/manga/masterkomik?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
     def doujindesu(self, link: str):
         """works with list and single chapter
         list: https://212.32.226.234/manga/i-cant-stand-it-ajumma/
@@ -154,6 +166,38 @@ class WibuAPI:
         try:
             url = f"{self.base_url}/drama/wibusubs?link={link}"
             response = get(url, timeout=5).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def sukidesuost(self, link: str):
+        try:
+            url = f"{self.base_url}/music/sukidesuost?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def google(self, query: str):
+        try:
+            url = f"{self.base_url}/google/search?query={query}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def lk21(self, query: str):
+        try:
+            url = f"{self.base_url}/lk21/search?title={query}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def sukidesuost_search(self, query: str):
+        try:
+            url = f"{self.base_url}/music/sukidesuost/search?query={query}"
+            response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
@@ -265,22 +309,6 @@ class WibuAPI:
                 tag = f"%23{tag}"
             tag = tag.replace("#", "%23")
             url = f"{self.deprecated_url}/game/brawl/player/log?playerTag={tag}"
-            response = get(url, timeout=15).json()
-            return dumps(response, indent=2)
-        except Exception as e:
-            return f"An error occured report on @YBotsSupport\n\n{e}"
-
-    def google(self, query: str):
-        try:
-            url = f"{self.base_url}/google/search?query={query}"
-            response = get(url, timeout=15).json()
-            return dumps(response, indent=2)
-        except Exception as e:
-            return f"An error occured report on @YBotsSupport\n\n{e}"
-
-    def lk21(self, query: str):
-        try:
-            url = f"{self.base_url}/lk21/search?title={query}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
