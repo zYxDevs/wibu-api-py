@@ -101,6 +101,7 @@ print(res)
 | [Komikindo](#komikindo) | link |
 | [Mangatale](#mangatale) | link |
 | [Kiryuu](#kiryuu) | link |
+| [Masterkomik](#masterkomik) | link |
 | [Doujindesu](#doujindesu) | link |
 
 #### [Rawkuma](https://rawkuma.com)
@@ -153,6 +154,16 @@ res = api.kiryuu(url)
 print(res)
 ```
 
+#### [Masterkomik](https://masterkomik.com)
+```python
+# work with list and single chapter
+# list: https://masterkomik.com/manga/max-level-player/
+# single: https://masterkomik.com/max-level-player-chapter-07/
+url = "https://masterkomik.com/manga/max-level-player/"
+res = api.masterkomik(url)
+print(res)
+```
+
 #### [Doujindesu](https://212.32.226.234)
 ```python
 # works with list and single chapter
@@ -161,6 +172,14 @@ print(res)
 url = "https://212.32.226.234/manga/i-cant-stand-it-ajumma/"
 res = api.doujindesu(url)
 print(res)
+```
+
+**Note:**
+```
+Sometimes their will change domains, that will make some endpoints wont works.
+Please let me know when their sites change domains, I will asap fix dead endpoints.
+
+You can ping me on telegram or make new issue.
 ```
 
 ## Copyright:
