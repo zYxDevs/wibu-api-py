@@ -195,8 +195,6 @@ class WibuAPI:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def sukidesuost_search(self, query: str, page: int):
-        if page is None:
-            page = 1
         try:
             url = f"{self.base_url}/music/sukidesuost/search?query={query}&page={page}"
             response = get(url, timeout=15).json()
