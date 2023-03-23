@@ -194,9 +194,9 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-    def sukidesuost_search(self, query: str, page: int):
+    def sukidesuost_search(self, query: str):
         try:
-            url = f"{self.base_url}/music/sukidesuost/search?query={query}&page={page}"
+            url = f"{self.base_url}/music/sukidesuost/search?query={query}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
