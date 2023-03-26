@@ -32,15 +32,16 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-    """ off, due to cloudflare v2 captcha
     def anichin(self, link: str):
+        """works with batch, bd, and single eps link
+        https://anichin.vip/soul-land-season-2-episode-226-252-subtitle-indonesia/
+        """
         try:
             url = f"{self.base_url}/anime/anichin?link={link}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
-    """
 
     def kusonime(self, link: str):
         """works with batch, bd, and single eps link
