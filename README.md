@@ -42,21 +42,30 @@ api = WibuAPI()
 ```
 
 ### Anime, Hentai, Donghua
-_For nekopoi scrapper only works in [bot](#telegram-bot)._
+_For nekopoi scrapper only works in [bot](https://t.me/wibuapibot)._
 
 | Website | Params |
 | :-: | :-: |
-| [Lendrive](#lendrive)| link |
-| [Donghua](#donghua) | link |
-| [Kusonime](#kusonime) | link |
-| [Doronime](#doronime) | link |
-| [Samehadaku](#samehadaku) | link |
+| [Lendrive](https://github.com/zYxDevs/wibu-api-py#lendrive)| link |
+| [Anichin](https://github.com/zYxDevs/wibu-api-py#anichin) | link |
+| [Donghua](https://github.com/zYxDevs/wibu-api-py#donghua) | link |
+| [Kusonime](https://github.com/zYxDevs/wibu-api-py#kusonime) | link |
+| [Doronime](https://github.com/zYxDevs/wibu-api-py#doronime) | link |
+| [Samehadaku](https://github.com/zYxDevs/wibu-api-py#samehadaku) | link |
 
 #### [Lendrive](https://lendrive.web.id)
 ```python
 # works with batch, bd, and single eps link
 url = "https://lendrive.web.id/tondemo-skill-de-isekai-hourou-meshi-ep-04-dual-subs-x265-hevc-subtitle-indonesia-english/"
 res = api.lendrive(url)
+print(res)
+```
+
+#### [Anichin](https://anichin.vip)
+```python
+# works with batch, bd, and single eps link
+url = "https://anichin.vip/soul-land-season-2-episode-226-252-subtitle-indonesia/"
+res = api.anichin(url)
 print(res)
 ```
 
@@ -96,13 +105,13 @@ print(res)
 
 | Website | Params |
 | :-: | :-: |
-| [Rawkuma](#rawkuma) | link |
-| [Westmanga](#westmanga) | link |
-| [Komikindo](#komikindo) | link |
-| [Mangatale](#mangatale) | link |
-| [Kiryuu](#kiryuu) | link |
-| [Masterkomik](#masterkomik) | link |
-| [Doujindesu](#doujindesu) | link |
+| [Rawkuma](https://github.com/zYxDevs/wibu-api-py#rawkuma) | link |
+| [Westmanga](https://github.com/zYxDevs/wibu-api-py#westmanga) | link |
+| [Komikindo](https://github.com/zYxDevs/wibu-api-py#komikindo) | link |
+| [Mangatale](https://github.com/zYxDevs/wibu-api-py#mangatale) | link |
+| [Kiryuu](https://github.com/zYxDevs/wibu-api-py#kiryuu) | link |
+| [Masterkomik](https://github.com/zYxDevs/wibu-api-py#masterkomik) | link |
+| [Doujindesu](https://github.com/zYxDevs/wibu-api-py#doujindesu) | link |
 
 #### [Rawkuma](https://rawkuma.com)
 ```python
@@ -175,6 +184,9 @@ print(res)
 ```
 
 **Note:**
+```
+You can see more endpoints on https://wibu-api.eu.org/docs or wibuapi.py file.
+```
 ```
 Sometimes their will change domains, that will make some endpoints wont works.
 Please let me know when their sites change domains, I will asap fix dead endpoints.
