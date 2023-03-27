@@ -20,14 +20,33 @@ pip3 install -U wibuapi
 ```
 
 #### Install from repo
-```bash
+```shell
 root@zyxdevs:~ git clone https://github.com/zYxDevs/wibu-api-py wibuapi
 root@zyxdevs:~ cd wibuapi
 root@zyxdevs:~ python3 setup.py install
 ```
 
 ## Telegram Bot:
-_I've created official telegram bot to interacted with WibuAPI_
+_There's many useful features in bot but it required big resource, so i make it for paid users only. If you interest to buy PM me on Telegram._
+
+**Paid Features:**
+
+- [x] LH Translation zipper
+- [x] Shinigami zipper
+- [x] Worldmanhwas zipper
+- [x] Maid Manga zipper
+- [x] Mangayaro zipper
+- [x] Cosmicscans zipper
+- [x] nHentai zipper
+- [x] Sheakomik, Sheamanga zipper
+- [x] Komikindo.info zipper
+- [x] Otomi Games
+  - [x] Search parser
+  - [x] Download link scrapper
+- [x] Javhd
+  - [x] Search parser
+  - [x] Download link scrapper
+- [x] Other incoming features
 
 [![WibuAPI Bot](https://img.shields.io/badge/WibuAPI-Bot-blue?&logo=telegram)](https://wibuapibot.t.me)
 [![Yoga Pranata](https://img.shields.io/badge/Yoga-Pranata-blue?&logo=telegram)](https://t.me/Yoga_CIC)
@@ -42,7 +61,7 @@ api = WibuAPI()
 ```
 
 ### Anime, Hentai, Donghua
-_For nekopoi scrapper only works in [bot](https://t.me/wibuapibot)._
+_For nekopoi search only works in [bot](https://t.me/wibuapibot)._
 
 | Website | Params |
 | :-: | :-: |
@@ -52,6 +71,7 @@ _For nekopoi scrapper only works in [bot](https://t.me/wibuapibot)._
 | [Kusonime](https://github.com/zYxDevs/wibu-api-py#kusonime) | link |
 | [Doronime](https://github.com/zYxDevs/wibu-api-py#doronime) | link |
 | [Samehadaku](https://github.com/zYxDevs/wibu-api-py#samehadaku) | link |
+| [Nekopoi](https://github.com/zYxDevs/wibu-api-py#nekopoi) | link |
 
 #### [Lendrive](https://lendrive.web.id)
 ```python
@@ -101,6 +121,14 @@ res = api.samehadaku(url)
 print(res)
 ```
 
+#### [Nekopoi](https://nekopoi.care)
+```python
+# works with single eps link (hentai, jav)
+url = "https://nekopoi.care/koumi-jima-shuu-7-de-umeru-mesu-tachi-episode-1-subtitle-indonesia/"
+res = api.nekopoi(url)
+print(res)
+```
+
 ### Manga, Doujin, Manhua, Manhwa
 
 | Website | Params |
@@ -111,7 +139,9 @@ print(res)
 | [Mangatale](https://github.com/zYxDevs/wibu-api-py#mangatale) | link |
 | [Kiryuu](https://github.com/zYxDevs/wibu-api-py#kiryuu) | link |
 | [Masterkomik](https://github.com/zYxDevs/wibu-api-py#masterkomik) | link |
+| [Mangakita](https://github.com/zYxDevs/wibu-api-py#mangakita) | link |
 | [Doujindesu](https://github.com/zYxDevs/wibu-api-py#doujindesu) | link |
+| [Crotpedia](https://github.com/zYxDevs/wibu-api-py#crotpedia) | link |
 
 #### [Rawkuma](https://rawkuma.com)
 ```python
@@ -173,6 +203,16 @@ res = api.masterkomik(url)
 print(res)
 ```
 
+#### [Mangakita](https://mangakita.net)
+```python
+# works with list and single chapter
+# list: https://mangakita.net/manga/please-go-home-akutsu-san/
+# single: https://mangakita.net/please-go-home-akutsu-san-chapter-137/
+url = "https://mangakita.net/manga/please-go-home-akutsu-san/"
+res = api.mangakita(url)
+print(res)
+```
+
 #### [Doujindesu](https://212.32.226.234)
 ```python
 # works with list and single chapter
@@ -183,14 +223,23 @@ res = api.doujindesu(url)
 print(res)
 ```
 
+#### [Crotpedia](https://38.242.194.12)
+```python
+# works with list chapter
+# list: https://38.242.194.12/baca/series/young-housemaid/
+url = "https://38.242.194.12/baca/series/young-housemaid/"
+res = api.crotpedia(url)
+print(res)
+```
+
 **Note:**
 ```
 You can see more endpoints on https://wibu-api.eu.org/docs or wibuapi.py file.
-```
-```
+
 Sometimes their will change domains, that will make some endpoints wont works.
 Please let me know when their sites change domains, I will asap fix dead endpoints.
 
+If you find any bugs or requests a new sites,
 You can ping me on telegram or make new issue.
 ```
 
