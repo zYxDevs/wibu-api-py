@@ -357,14 +357,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-    def wall(self, query: str):
-        try:
-            url = f"{self.base_url}/etc/wallhd?query={query}"
-            response = get(url, timeout=15).json()
-            return dumps(response, indent=2)
-        except Exception as e:
-            return f"An error occured report on @YBotsSupport\n\n{e}"
-
     def youtube(self, url: str):
         """tested on youtube video link, other not tested yet
         https://www.youtube.com/watch?v=a1V0UbBNliM
