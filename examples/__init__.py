@@ -1,3 +1,0 @@
-"""
-Directory for examples files
-"""
