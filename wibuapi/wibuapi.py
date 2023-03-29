@@ -213,6 +213,14 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
+    def hikarinoakari(self, link: str):
+        try:
+            url = f"{self.base_url}/music/hikarinoakari?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
     def google(self, query: str):
         try:
             url = f"{self.base_url}/google/search?query={query}"
