@@ -43,6 +43,17 @@ class WibuAPI:
         except Exception as e:
             return "An error occured report on @YBotsSupport\n\n{}".format(e)
 
+    def nekopoi(self, link: str):
+        """works with single eps link
+        https://nekopoi.care/koumi-jima-shuu-7-de-umeru-mesu-tachi-episode-1-subtitle-indonesia/
+        """
+        try:
+            url = f"{self.base_url}/anime/nekopoi?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+
     def kusonime(self, link: str):
         """works with batch, bd, and single eps link
         https://kusonime.com/isekai-ojisan-batch-subtitle-indonesia/
@@ -148,6 +159,18 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
+    def mangakita(self, link: str):
+        """work with list and single chapter
+        list: https://mangakita.net/manga/please-go-home-akutsu-san/
+        single: https://mangakita.net/please-go-home-akutsu-san-chapter-137/
+        """
+        try:
+            url = f"{self.base_url}/manga/mangakita?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
     def doujindesu(self, link: str):
         """works with list and single chapter
         list: https://212.32.226.234/manga/i-cant-stand-it-ajumma/
@@ -155,6 +178,17 @@ class WibuAPI:
         """
         try:
             url = f"{self.base_url}/manga/doudesu?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def crotpedia(self, link: str):
+        """works with list chapter
+        list: https://38.242.194.12/baca/series/young-housemaid/
+        """
+        try:
+            url = f"{self.base_url}/manga/crotpedia?link={link}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
@@ -174,6 +208,14 @@ class WibuAPI:
     def sukidesuost(self, link: str):
         try:
             url = f"{self.base_url}/music/sukidesuost?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def hikarinoakari(self, link: str):
+        try:
+            url = f"{self.base_url}/music/hikarinoakari?link={link}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
@@ -318,14 +360,6 @@ class WibuAPI:
     def ud(self, query: str):
         try:
             url = f"{self.base_url}/etc/ud?query={query}"
-            response = get(url, timeout=15).json()
-            return dumps(response, indent=2)
-        except Exception as e:
-            return f"An error occured report on @YBotsSupport\n\n{e}"
-
-    def wall(self, query: str):
-        try:
-            url = f"{self.base_url}/etc/wallhd?query={query}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
