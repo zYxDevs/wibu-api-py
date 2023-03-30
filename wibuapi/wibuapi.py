@@ -41,7 +41,7 @@ class WibuAPI:
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def nekopoi(self, link: str):
         """works with single eps link
@@ -52,7 +52,7 @@ class WibuAPI:
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
-            return "An error occured report on @YBotsSupport\n\n{}".format(e)
+            return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def kusonime(self, link: str):
         """works with batch, bd, and single eps link
