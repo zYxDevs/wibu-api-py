@@ -67,7 +67,7 @@ class WibuAPI:
 
     def doronime(self, link: str):
         """works with batch, bd, and single eps link
-        https://doronime.id/anime/om-ke-isekai/batch
+        https://doroni.me/anime/om-ke-isekai/batch
         """
         try:
             url = f"{self.base_url}/anime/doronime?link={link}"
