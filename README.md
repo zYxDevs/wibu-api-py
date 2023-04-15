@@ -105,10 +105,10 @@ res = api.kusonime(url)
 print(res)
 ```
 
-#### [Doronime](https://doronime.id)
+#### [Doronime](https://doroni.me)
 ```python
 # works with batch, bd, and single eps link
-url = "https://doronime.id/anime/om-ke-isekai/batch"
+url = "https://doroni.me/anime/om-ke-isekai/batch"
 res = api.doronime(url)
 print(res)
 ```
