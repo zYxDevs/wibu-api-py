@@ -40,6 +40,7 @@ _There's many useful features in bot but it required big resource, so i make it 
 - [x] nHentai zipper
 - [x] Sheakomik, Sheamanga zipper
 - [x] Komikindo.info zipper
+- [x] Mikoroku zipper
 - [x] Otomi Games
   - [x] Search parser
   - [x] Download link scrapper
@@ -71,6 +72,7 @@ _For nekopoi search only works in [bot](https://t.me/wibuapibot)._
 | [Kusonime](https://github.com/zYxDevs/wibu-api-py#kusonime) | link |
 | [Doronime](https://github.com/zYxDevs/wibu-api-py#doronime) | link |
 | [Samehadaku](https://github.com/zYxDevs/wibu-api-py#samehadaku) | link |
+| [Kuramanime](https://github.com/zYxDevs/wibu-api-py#kuramanime) | link |
 | [Nekopoi](https://github.com/zYxDevs/wibu-api-py#nekopoi) | link |
 
 #### [Lendrive](https://lendrive.web.id)
@@ -118,6 +120,14 @@ print(res)
 # works with batch, bd, and single eps link
 url = "https://samehadaku.run/nierautomata-ver1-1a-episode-8/"
 res = api.samehadaku(url)
+print(res)
+```
+
+#### [Kuramanime](https://kuramalink.my.id)
+```python
+# works with batch, bd, and single eps link
+url = "https://kuramanime.art/anime/2004/mushoku-tensei-isekai-ittara-honki-dasu-shugo-jutsushi-fitz/episode/1"
+res = api.kuramanime(url)
 print(res)
 ```
 
