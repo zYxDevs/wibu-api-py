@@ -37,7 +37,7 @@ setuptools.setup(
         "genshin",
         "facebook",
         "youtube",
-    ]
+    ],
     classifiers=[
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
