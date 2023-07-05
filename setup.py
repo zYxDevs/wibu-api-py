@@ -10,7 +10,7 @@ setuptools.setup(
     description="Official Python Wrapper for Wibu API.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    license="GNU Lesser General Public License v3 (LGPLv3)",
+    license="MIT",
     author="Yoga Pranata",
     author_email="yoga@zyxdevs.eu.org",
     url="https://github.com/zYxDevs/wibu-api-py",
