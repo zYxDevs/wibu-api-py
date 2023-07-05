@@ -41,7 +41,6 @@ _There's many useful features in bot but it required big resource, so i make it 
 - [x] Sheakomik, Sheamanga zipper
 - [x] Komikindo.info zipper
 - [x] Mikoroku zipper
-- [x] Kuramanime
 - [x] Onlylama
   - [x] Download link sraper
   - [x] Photo album zipper
