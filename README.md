@@ -1,5 +1,5 @@
 # Wibu-API-Py
-[![Downloads](https://static.pepy.tech/personalized-badge/wibuapi?units=none&left_color=gray&right_color=blue&left_text=downloads)](https://pepy.tech/project/wibuapi)  [![Repo Size](https://img.shields.io/github/repo-size/zYxDevs/wibu-api-py?style=flat-square)](https://github.com/zYxDevs/wibu-api-py)  [![Languages](https://img.shields.io/github/languages/top/zYxDevs/wibu-api-py?style=flat-square)](https://github.com/zYxDevs/wibu-api-py)  [![CodeFactor](https://www.codefactor.io/repository/github/zYxDevs/wibu-api-py/badge)](https://www.codefactor.io/repository/github/zYxDevs/wibu-api-py)  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/8b87ea2387574f54849805430a9bc9ea)](https://www.codacy.com/gh/zYxDevs/wibu-api-py/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zYxDevs/wibu-api-py&amp;utm_campaign=Badge_Grade)
+[![Downloads](https://static.pepy.tech/badge/wibuapi)](https://pepy.tech/project/wibuapi)  [![Repo Size](https://img.shields.io/github/repo-size/zYxDevs/wibu-api-py?style=flat-square)](https://github.com/zYxDevs/wibu-api-py)  [![Languages](https://img.shields.io/github/languages/top/zYxDevs/wibu-api-py?style=flat-square)](https://github.com/zYxDevs/wibu-api-py)  [![CodeFactor](https://www.codefactor.io/repository/github/zYxDevs/wibu-api-py/badge)](https://www.codefactor.io/repository/github/zYxDevs/wibu-api-py)  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/8b87ea2387574f54849805430a9bc9ea)](https://www.codacy.com/gh/zYxDevs/wibu-api-py/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zYxDevs/wibu-api-py&amp;utm_campaign=Badge_Grade)
 
 _Official Python Wrapper for Wibu API._
 
@@ -41,12 +41,16 @@ _There's many useful features in bot but it required big resource, so i make it 
 - [x] Sheakomik, Sheamanga zipper
 - [x] Komikindo.info zipper
 - [x] Mikoroku zipper
+- [x] Mangakakalot zipper
+- [x] Onlylama
+  - [x] Download link sraper
+  - [x] Photo album zipper
 - [x] Otomi Games
   - [x] Search parser
-  - [x] Download link scrapper
+  - [x] Download link scraper
 - [x] Javhd
   - [x] Search parser
-  - [x] Download link scrapper
+  - [x] Download link scraper
 - [x] Other incoming features
 
 [![WibuAPI Bot](https://img.shields.io/badge/WibuAPI-Bot-blue?&logo=telegram)](https://wibuapibot.t.me)
