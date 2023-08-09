@@ -31,6 +31,7 @@ _There's many useful features in bot but it required big resource, so i make it 
 
 **Paid Features:**
 
+- [x] All features on WibuAPI
 - [x] LH Translation zipper
 - [x] Shinigami zipper
 - [x] Worldmanhwas zipper
@@ -73,11 +74,15 @@ _For nekopoi search only works in [bot](https://t.me/wibuapibot)._
 | [Lendrive](https://github.com/zYxDevs/wibu-api-py#lendrive)| link |
 | [Anichin](https://github.com/zYxDevs/wibu-api-py#anichin) | link |
 | [Donghua](https://github.com/zYxDevs/wibu-api-py#donghua) | link |
+| [Anixlife](https://github.com/zYxDevs/wibu-api-py#anixlife) | link |
+| [Kazefuri](https://github.com/zYxDevs/wibu-api-py#kazefuri) | link |
 | [Kusonime](https://github.com/zYxDevs/wibu-api-py#kusonime) | link |
 | [Doronime](https://github.com/zYxDevs/wibu-api-py#doronime) | link |
 | [Samehadaku](https://github.com/zYxDevs/wibu-api-py#samehadaku) | link |
 | [Kuramanime](https://github.com/zYxDevs/wibu-api-py#kuramanime) | link |
+| [Moenime](https://github.com/zYxDevs/wibu-api-py#moenime) | link |
 | [Nekopoi](https://github.com/zYxDevs/wibu-api-py#nekopoi) | link |
+| [HentaiGuru](https://github.com/zYxDevs/wibu-api-py#hentaiguru) | link |
 
 #### [Lendrive](https://lendrive.web.id)
 ```python
@@ -100,6 +105,22 @@ print(res)
 # works with batch, bd, and single eps link
 url = "https://donghua.web.id/soul-land-season-2-episode-224-250"
 res = api.donghua(url)
+print(res)
+```
+
+#### [Anixlife](https://anixverse.com)
+```python
+# works with batch, bd, and single eps link
+url = "https://anixverse.com/battle-through-the-heavens-season-5-episode-56-subtitle-indonesia/"
+res = api.anixlife(url)
+print(res)
+```
+
+#### [Kazefuri](https://kazefuri.vip)
+```python
+# works with batch, bd, and single eps link
+url = "https://kazefuri.vip/shrouding-the-heavens-episode-17-subtitle-indonesia/"
+res = api.kazefuri(url)
 print(res)
 ```
 
@@ -135,11 +156,27 @@ res = api.kuramanime(url)
 print(res)
 ```
 
+#### [Moenime](https://moenime.com)
+```python
+# works with batch, bd, and single eps link
+url = "https://moenime.com/liar-liar-sub-indo/"
+res = api.moenime(url)
+print(res)
+```
+
 #### [Nekopoi](https://nekopoi.care)
 ```python
 # works with single eps link (hentai, jav)
 url = "https://nekopoi.care/koumi-jima-shuu-7-de-umeru-mesu-tachi-episode-1-subtitle-indonesia/"
 res = api.nekopoi(url)
+print(res)
+```
+
+#### [HentaiGuru](https://hentai.guru)
+```python
+# works with single eps link (hentai, jav)
+url = "https://hentai.guru/hentai/fushigi-no-kuni-no-succubus/"
+res = api.hentaiguru(url)
 print(res)
 ```
 
