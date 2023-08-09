@@ -32,6 +32,28 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
+    def anixlife(self, link: str):
+        """works with batch, bd, and single eps link
+        https://anixverse.com/battle-through-the-heavens-season-5-episode-56-subtitle-indonesia/
+        """
+        try:
+            url = f"{self.base_url}/anime/anixlife?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def kazefuri(self, link: str):
+        """works with batch, bd, and single eps link
+        https://kazefuri.vip/shrouding-the-heavens-episode-17-subtitle-indonesia/
+        """
+        try:
+            url = f"{self.base_url}/anime/kazefuri?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
     def anichin(self, link: str):
         """works with batch, bd, and single eps link
         https://anichin.vip/soul-land-season-2-episode-226-252-subtitle-indonesia/
@@ -49,6 +71,17 @@ class WibuAPI:
         """
         try:
             url = f"{self.base_url}/anime/nekopoi?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def hentaiguru(self, link: str):
+        """works with batch, bd, and single eps link
+        https://hentai.guru/hentai/fushigi-no-kuni-no-succubus/
+        """
+        try:
+            url = f"{self.base_url}/anime/hentaiguru?link={link}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
@@ -93,6 +126,17 @@ class WibuAPI:
         """
         try:
             url = f"{self.base_url}/anime/kuramanime?link={link}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def moenime(self, link: str):
+        """works with batch, bd, and single eps link
+        https://moenime.com/liar-liar-sub-indo/
+        """
+        try:
+            url = f"{self.base_url}/anime/moenime?link={link}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
@@ -216,6 +260,17 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
+    def adikfilm(self, link: str):
+        """work with single post link (may bug sometimes)
+        https://adikfilm.click/zom-100-bucket-list-of-the-dead-2023/
+        """
+        try:
+            url = f"{self.base_url}/film/adikfilm?link={link}"
+            response = get(url, timeout=5).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
     def sukidesuost(self, link: str):
         try:
             url = f"{self.base_url}/music/sukidesuost?link={link}"
@@ -251,6 +306,25 @@ class WibuAPI:
     def sukidesuost_search(self, query: str, page: int):
         try:
             url = f"{self.base_url}/music/sukidesuost/search?query={query}&page={page}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def anilyrics_search(self, query: str):
+        try:
+            url = f"{self.base_url}/anime/lyrics/search?query={query}"
+            response = get(url, timeout=15).json()
+            return dumps(response, indent=2)
+        except Exception as e:
+            return f"An error occured report on @YBotsSupport\n\n{e}"
+
+    def anilyrics(self, link: str, type: str):
+        """
+        Available lyrics type: romaji, kanji, english
+        """
+        try:
+            url = f"{self.base_url}/anime/lyrics?link={link}&type={type}"
             response = get(url, timeout=15).json()
             return dumps(response, indent=2)
         except Exception as e:
