@@ -320,6 +320,9 @@ class WibuAPI:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
     def anilyrics(self, link: str, type: str):
+        """
+        Available lyrics type: romaji, kanji, english
+        """
         try:
             url = f"{self.base_url}/anime/lyrics?link={link}&type={type}"
             response = get(url, timeout=15).json()
