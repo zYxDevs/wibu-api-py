@@ -314,8 +314,8 @@ class WibuAPI:
     def anilyrics_search(self, query: str):
         try:
             url = f"{self.base_url}/anime/lyrics/search?query={query}"
-            response = get(url, timeout=15).json()
-            return dumps(response, indent=2)
+            response = get(url, timeout=15)
+            return response
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
@@ -325,8 +325,8 @@ class WibuAPI:
         """
         try:
             url = f"{self.base_url}/anime/lyrics?link={link}&type={type}"
-            response = get(url, timeout=15).json()
-            return dumps(response, indent=2)
+            response = get(url, timeout=15)
+            return response
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
