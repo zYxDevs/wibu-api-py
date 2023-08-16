@@ -32,20 +32,23 @@ _There's many useful features in bot but it required big resource, so i make it 
 **Paid Features:**
 
 - [x] All features on WibuAPI
-- [x] LH Translation zipper
-- [x] Shinigami zipper
-- [x] Worldmanhwas zipper
-- [x] Maid Manga zipper
-- [x] Mangayaro zipper
-- [x] Cosmicscans zipper
-- [x] nHentai zipper
-- [x] Sheakomik, Sheamanga zipper
-- [x] Komikindo.info zipper
-- [x] Mikoroku zipper
-- [x] Mangakakalot zipper
+- [x] LH Translation ziper
+- [x] Shinigami ziper
+- [x] Worldmanhwas ziper
+- [x] Maid Manga ziper
+- [x] Mangayaro ziper
+- [x] Cosmicscans ziper
+- [x] nHentai ziper
+- [x] Sheakomik, Sheamanga ziper
+- [x] Komikindo.info ziper
+- [x] Mikoroku ziper
+- [x] Mangakakalot ziper
+- [x] OnlyWaifu ziper
+- [x] Manhwatop ziper
+- [x] Manhuafast ziper
 - [x] Onlylama
-  - [x] Download link sraper
-  - [x] Photo album zipper
+  - [x] Download link scraper
+  - [x] Photo album ziper
 - [x] Otomi Games
   - [x] Search parser
   - [x] Download link scraper
@@ -185,6 +188,7 @@ print(res)
 | Website | Params |
 | :-: | :-: |
 | [Rawkuma](https://github.com/zYxDevs/wibu-api-py#rawkuma) | link |
+| [Yumekomik](https://github.com/zYxDevs/wibu-api-py#yumekomik) | link |
 | [Westmanga](https://github.com/zYxDevs/wibu-api-py#westmanga) | link |
 | [Komikindo](https://github.com/zYxDevs/wibu-api-py#komikindo) | link |
 | [Mangatale](https://github.com/zYxDevs/wibu-api-py#mangatale) | link |
@@ -201,6 +205,16 @@ print(res)
 # single: https://rawkuma.com/guilty-circle-chapter-83/
 url = "https://rawkuma.com/manga/guilty-circle/"
 res = api.rawkuma(url)
+print(res)
+```
+
+#### [Yumekomik](https://yumekomik.com)
+```python
+# works with list and single chapter
+# list: https://yumekomik.com/manga/watashi-yori-tsuyoi-otoko-to-kekkon-shitai-no/
+# single: https://yumekomik.com/watashi-yori-tsuyoi-otoko-to-kekkon-shitai-no-chapter-08-bahasa-indonesia/
+url = "https://yumekomik.com/manga/watashi-yori-tsuyoi-otoko-to-kekkon-shitai-no/"
+res = api.yumekomik(url)
 print(res)
 ```
 
