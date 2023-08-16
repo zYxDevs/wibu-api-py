@@ -165,7 +165,6 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
 
-
     def westmanga(self, link: str):
         """works with list and single chapter
         list: https://westmanga.info/manga/kaifuku-jutsushi-no-yarinaoshi/
