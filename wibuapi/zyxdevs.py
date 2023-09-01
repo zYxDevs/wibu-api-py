@@ -17,4 +17,3 @@ class Etc:
             return resp
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
-    
