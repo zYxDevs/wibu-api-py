@@ -291,7 +291,7 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
 
-    # Lewd Pics
+    # Anipics, Porn, JAV, Booru
     def anipics(self, category: str, tags: str):
         """
         Available category: nsfw
@@ -299,6 +299,54 @@ class WibuAPI:
         """
         try:
             url = f"{self.base_url}/anime/{category}/{tags}"
+            response = get(url, timeout=15).json()
+            return response
+        except Exception as e:
+            return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
+
+    def jav(self):
+        try:
+            url = f"{self.base_url}/porn/jav"
+            response = get(url, timeout=15).json()
+            return response
+        except Exception as e:
+            return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
+
+    def porn_gif(self):
+        try:
+            url = f"{self.base_url}/porn/gif"
+            response = get(url, timeout=15).json()
+            return response
+        except Exception as e:
+            return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
+
+    def realbooru_nsfw(self):
+        try:
+            url = f"{self.base_url}/booru/nsfw/rb"
+            response = get(url, timeout=15).json()
+            return response
+        except Exception as e:
+            return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
+
+    def gelbooru_nsfw(self):
+        try:
+            url = f"{self.base_url}/booru/nsfw/gb"
+            response = get(url, timeout=15).json()
+            return response
+        except Exception as e:
+            return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
+
+    def gelbooru_sfw(self):
+        try:
+            url = f"{self.base_url}/booru/sfw/gb"
+            response = get(url, timeout=15).json()
+            return response
+        except Exception as e:
+            return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
+
+    def safebooru_sfw(self):
+        try:
+            url = f"{self.base_url}/booru/sfw/sb"
             response = get(url, timeout=15).json()
             return response
         except Exception as e:
