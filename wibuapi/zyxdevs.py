@@ -13,7 +13,6 @@ class Etc:
         try:
             main = get(self.base_url, timeout=15).json()
             old = get(self.deprecated_url, timeout=15).json()
-            resp = [{"main": main}, {"deprecated": old}]
-            return resp
+            return [{"main": main}, {"deprecated": old}]
         except Exception as e:
             return f"An error occured report on @YBotsSupport\n\n{e}"
