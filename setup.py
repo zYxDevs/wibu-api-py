@@ -6,7 +6,7 @@ with open("README.md", "r") as txt:
 
 setuptools.setup(
     name="wibuapi",
-    version="0.1.4",
+    version="0.1.5",
     description="Official Python Wrapper for Wibu API.",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -31,6 +31,11 @@ setuptools.setup(
         "music",
         "booru",
         "api",
+        "ip",
+        "terabox",
+        "lyrics",
+        "booru",
+        "sfw",
         "nsfw",
         "scraper",
         "bypasser",
