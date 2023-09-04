@@ -46,7 +46,7 @@ setuptools.setup(
     project_urls={
         "Web": "https://wibu-api.eu.org",
         "Documentation": "https://wibu-api.eu.org/redoc",
-        "Bug Tracker": "https://github.com/zYxDevs/wibu-api-py/issues"
+        "Bug Tracker": "https://github.com/zYxDevs/wibu-api-py/issues",
     },
     classifiers=[
         "Programming Language :: Python",
