@@ -8,7 +8,7 @@ class WibuAPI:
     def __init__(self):
         self.base_url = "https://wibu-api.eu.org/api"
         self.deprecated_url = "https://api.wibu-api.eu.org/api"
-    
+
     # Anime, Donghua, Hentai
     def lendrive(self, link: str):
         try:
@@ -290,7 +290,6 @@ class WibuAPI:
             return response
         except Exception as e:
             return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
-
 
     # Lewd Pics
     def anipics(self, category: str, tags: str):
