@@ -13,7 +13,7 @@ setuptools.setup(
     license="MIT",
     author="Yoga Pranata",
     author_email="yoga@zyxdevs.eu.org",
-    url="https://github.com/zYxDevs/wibu-api-py",
+    url="https://wibu-api.eu.org",
     packages=setuptools.find_packages(),
     keywords=[
         "wibu",
@@ -44,9 +44,11 @@ setuptools.setup(
         "youtube",
     ],
     project_urls={
-        "Web": "https://wibu-api.eu.org",
+        "Source": "https://github.com/zYxDevs/wibu-api-py",
+        "Funding": "https://github.com/sponsors/zYxDevs",
         "Documentation": "https://wibu-api.eu.org/redoc",
         "Bug Tracker": "https://github.com/zYxDevs/wibu-api-py/issues",
+        "Changelog": "https://github.com/zYxDevs/wibu-api-py/releases",
     },
     classifiers=[
         "Programming Language :: Python",
