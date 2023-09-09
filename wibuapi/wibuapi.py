@@ -457,10 +457,24 @@ class WibuAPI:
         except Exception as e:
             return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
 
-    # IP Lookup
+    # Tools
     def ip_lookup(self, ip: str):
         try:
             url = f"{self.base_url}/lookup/ip?ip={ip}"
+            return get(url, timeout=15).json()
+        except Exception as e:
+            return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
+
+    def pypi_search(self, query: str, page: int):
+        try:
+            url = f"{self.base_url}/pypi/search?query={query}&page={page}"
+            return get(url, timeout=15).json()
+        except Exception as e:
+            return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
+
+    def npm_search(self, query: str):
+        try:
+            url = f"{self.base_url}/npm/search?query={query}"
             return get(url, timeout=15).json()
         except Exception as e:
             return f"An error occured report on https://t.me/YBotsSupport\n\n{e}"
