@@ -62,7 +62,7 @@ class AsyncWibuAPI:
             return await getwibu(url, timeout=15)
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
-    
+
     async def doronime(self, link: str):
         try:
             url = f"{self.base_url}/anime/doronime?link={link}"
@@ -90,4 +90,3 @@ class AsyncWibuAPI:
             return await getwibu(url, timeout=15)
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
-
