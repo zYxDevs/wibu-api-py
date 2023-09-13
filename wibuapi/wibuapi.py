@@ -262,7 +262,9 @@ class WibuAPI:
         if category not in ("nsfw"):
             return f"Category {category} is unknown. Available category: nsfw"
         if tags not in ("ahegao", "waifu", "neko", "trap", "bj"):
-            return f"Tags {tags} is unknown. Available tags: ahegao, waifu, neko, trap, bj"
+            return (
+                f"Tags {tags} is unknown. Available tags: ahegao, waifu, neko, trap, bj"
+            )
         try:
             url = f"{self.base_url}/anime/{category}/{tags}"
             return get(url, timeout=15).json()
