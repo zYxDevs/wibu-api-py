@@ -425,3 +425,69 @@ class AsyncWibuAPI:
             return await getwibu(url, timeout=15)
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    async def device(self, query: str):
+        try:
+            url = f"{self.base_url}/etc/gsm/search?query={query}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    async def device(self, query: str):
+        try:
+            url = f"{self.base_url}/etc/gsm/search?query={query}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    async def slug(self, query: str):
+        try:
+            url = f"{self.base_url}/etc/gsm/slug?query={query}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    # Encode and Decode
+    async def b64encode(self, query: str):
+        try:
+            url = f"{self.base_url}/encode/base64?query={query}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    async def b64decode(self, query: str):
+        try:
+            url = f"{self.base_url}/decode/base64?query={query}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    # Tools
+    async def ip_lookup(self, ip: str):
+        try:
+            url = f"{self.base_url}/lookup/ip?ip={ip}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    async def pypi_search(self, query: str, page: int):
+        try:
+            url = f"{self.base_url}/pypi/search?query={query}&page={page}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    async def npm_search(self, query: str):
+        try:
+            url = f"{self.base_url}/npm/search?query={query}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    # Bypasser
+    async def terabox(self, url: str):
+        try:
+            url = f"{self.base_url}/bypass/terabox?url={url}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
