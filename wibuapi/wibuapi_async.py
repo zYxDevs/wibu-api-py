@@ -1,3 +1,6 @@
+# (c) 2022-2023 Yoga Pranata a.k.a zYxDevs
+# This file contains all api path from wibuapi.
+
 from .utils import getwibu
 
 
@@ -180,6 +183,35 @@ class AsyncWibuAPI:
     async def mydramalist_search(self, query: str):
         try:
             url = f"{self.base_url}/drama/search?query={query}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    # Novel
+    async def novelupdates_search(self, query: str):
+        try:
+            url = f"{self.base_url}/novel/novelupdates/search?query={query}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    async def noveltoon_search(self, query: str, language: str):
+        try:
+            url = f"{self.base_url}/novel/noveltoon/search?query={query}&language={language}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    async def noveltoon_chapter(self, link: str):
+        try:
+            url = f"{self.base_url}/novel/noveltoon/chapter?link={link}"
+            return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    async def noveltoon_read(self, link: str):
+        try:
+            url = f"{self.base_url}/novel/noveltoon/read?link={link}"
             return await getwibu(url, timeout=15)
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
@@ -489,5 +521,20 @@ class AsyncWibuAPI:
         try:
             url = f"{self.base_url}/bypass/terabox?url={url}"
             return await getwibu(url, timeout=15)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    # Chatbot AI
+    async def bard(self, query: str, cookie: str = ""):
+        try:
+            url = f"{self.base_url}/chatbot/bard?query={query}&cookie={cookie}"
+            return await getwibu(url, timeout=50)
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    async def gpt(self, query: str, gpt_key: str = ""):
+        try:
+            url = f"{self.base_url}/chatbot/gpt?query={query}&gpt_key={gpt_key}"
+            return await getwibu(url, timeout=50)
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
