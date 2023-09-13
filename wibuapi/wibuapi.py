@@ -259,10 +259,10 @@ class WibuAPI:
 
     # Anipics, Porn, JAV, Booru
     def anipics(self, category: str, tags: str):
-        """
-        Available category: nsfw
-        Available tags: ahegao, waifu, neko, trap, bj
-        """
+        if category not in ("nsfw"):
+            return f"Category {category} is unknown. Available category: nsfw"
+        if tags not in ("ahegao", "waifu", "neko", "trap", "bj"):
+            return f"Tags {tags} is unknown. Available tags: ahegao, waifu, neko, trap, bj"
         try:
             url = f"{self.base_url}/anime/{category}/{tags}"
             return get(url, timeout=15).json()
@@ -412,9 +412,7 @@ class WibuAPI:
 
     # Other Endpoints
     def youtube(self, url: str):
-        """
-        https://www.youtube.com/watch?v=a1V0UbBNliM
-        """
+        """https://www.youtube.com/watch?v=a1V0UbBNliM"""
         try:
             url = f"{self.base_url}/etc/youtube?url={url}"
             return get(url, timeout=15).json()
@@ -422,6 +420,7 @@ class WibuAPI:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def facebook(self, url: str):
+        """https://www.facebook.com/groups/247539486825123/permalink/628642412048160"""
         try:
             url = f"{self.base_url}/etc/facebook?url={url}"
             return get(url, timeout=15).json()
