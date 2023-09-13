@@ -187,6 +187,35 @@ class WibuAPI:
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
+    # Novel
+    def novelupdates_search(self, query: str):
+        try:
+            url = f"{self.base_url}/novel/novelupdates/search?query={query}"
+            return get(url, timeout=15).json()
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    def noveltoon_search(self, query: str, language: str):
+        try:
+            url = f"{self.base_url}/novel/noveltoon/search?query={query}&language={language}"
+            return get(url, timeout=15).json()
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    def noveltoon_chapter(self, link: str):
+        try:
+            url = f"{self.base_url}/novel/noveltoon/chapter?link={link}"
+            return get(url, timeout=15).json()
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    def noveltoon_read(self, link: str):
+        try:
+            url = f"{self.base_url}/novel/noveltoon/read?link={link}"
+            return get(url, timeout=15).json()
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
     # Anime Ost, Theme Song, Anime Song
     def sukidesuost_search(self, query: str, page: int):
         try:
@@ -485,5 +514,20 @@ class WibuAPI:
         try:
             url = f"{self.base_url}/bypass/terabox?url={url}"
             return get(url, timeout=15).json()
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    # Chatbot AI
+    def bard(self, query: str, cookie: str = ""):
+        try:
+            url = f"{self.base_url}/chatbot/bard?query={query}&cookie={cookie}"
+            return get(url, timeout=50).json()
+        except Exception as e:
+            return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
+
+    def gpt(self, query: str, gpt_key: str = ""):
+        try:
+            url = f"{self.base_url}/chatbot/gpt?query={query}&gpt_key={gpt_key}"
+            return get(url, timeout=50).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
