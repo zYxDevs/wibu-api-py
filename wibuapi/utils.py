@@ -1,3 +1,6 @@
+# (c) 2022-2023 Yoga Pranata a.k.a zYxDevs
+# This file contains utilities for wibuapi.
+
 import aiohttp
 
 
