@@ -3,3 +3,4 @@
 
 from .wibuapi import WibuAPI
 from .zyxdevs import Etc
+from .wibuapi_async import AsyncWibuAPI
