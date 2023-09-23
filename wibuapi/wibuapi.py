@@ -2,7 +2,7 @@
 # This file contains all api path from wibuapi.
 
 import asyncio
-from wibuapi_async import AsyncWibuAPI
+from .wibuapi_async import AsyncWibuAPI
 
 
 class WibuAPI:
