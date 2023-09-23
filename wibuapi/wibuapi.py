@@ -13,7 +13,8 @@ class WibuAPI:
     # Anime, Donghua, Hentai
     def lendrive(self, link: str):
         try:
-            result = self.loop.run_until_complete(self.async_wibuapi.lendrive(link))
+            get = self.async_wibuapi.lendrive(link)
+            result = self.loop.run_until_complete(get)
             return result
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
