@@ -1,26 +1,27 @@
 # (c) 2022-2023 Yoga Pranata a.k.a zYxDevs
 # This file contains all api path from wibuapi.
 
-from requests import get
+import asyncio
+from wibuapi_async import AsyncWibuAPI
 
 
 class WibuAPI:
     def __init__(self):
-        self.base_url = "https://wibu-api.eu.org/api"
-        self.deprecated_url = "https://api.wibu-api.eu.org/api"
+        self.loop = asyncio.get_event_loop()
+        self.async_wibuapi = AsyncWibuAPI()
 
     # Anime, Donghua, Hentai
     def lendrive(self, link: str):
         try:
-            url = f"{self.base_url}/anime/lendrive?link={link}"
-            return get(url, timeout=15).json()
+            result = self.loop.run_until_complete(self.async_wibuapi.lendrive(link))
+            return result
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def donghua(self, link: str):
         try:
-            url = f"{self.base_url}/anime/donghua?link={link}"
-            return get(url, timeout=15).json()
+            result = self.loop.run_until_complete(self.async_wibuapi.donghua(link))
+            return result
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
