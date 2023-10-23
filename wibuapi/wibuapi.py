@@ -21,77 +21,77 @@ class WibuAPI:
     def donghua(self, link: str):
         try:
             url = f"{self.base_url}/anime/donghua?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def anixlife(self, link: str):
         try:
             url = f"{self.base_url}/anime/anixlife?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def kazefuri(self, link: str):
         try:
             url = f"{self.base_url}/anime/kazefuri?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def anichin(self, link: str):
         try:
             url = f"{self.base_url}/anime/anichin?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def nekopoi(self, link: str):
         try:
             url = f"{self.base_url}/anime/nekopoi?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def hentaiguru(self, link: str):
         try:
             url = f"{self.base_url}/anime/hentaiguru?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def kusonime(self, link: str):
         try:
             url = f"{self.base_url}/anime/kusonime?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def doronime(self, link: str):
         try:
             url = f"{self.base_url}/anime/doronime?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def samehadaku(self, link: str):
         try:
             url = f"{self.base_url}/anime/samehadaku?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def kuramanime(self, link: str):
         try:
             url = f"{self.base_url}/anime/kuramanime?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def moenime(self, link: str):
         try:
             url = f"{self.base_url}/anime/moenime?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -99,70 +99,70 @@ class WibuAPI:
     def rawkuma(self, link: str):
         try:
             url = f"{self.base_url}/manga/rawkuma?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def yumekomik(self, link: str):
         try:
             url = f"{self.base_url}/manga/yumekomik?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def westmanga(self, link: str):
         try:
             url = f"{self.base_url}/manga/westmanga?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def komikindo(self, link: str):
         try:
             url = f"{self.base_url}/manga/komikindo?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def mangatale(self, link: str):
         try:
             url = f"{self.base_url}/manga/mangatale?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def kiryuu(self, link: str):
         try:
             url = f"{self.base_url}/manga/kiryuu?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def masterkomik(self, link: str):
         try:
             url = f"{self.base_url}/manga/masterkomik?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def mangakita(self, link: str):
         try:
             url = f"{self.base_url}/manga/mangakita?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def doujindesu(self, link: str):
         try:
             url = f"{self.base_url}/manga/doudesu?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def crotpedia(self, link: str):
         try:
             url = f"{self.base_url}/manga/crotpedia?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -170,21 +170,21 @@ class WibuAPI:
     def wibusubs(self, link: str):
         try:
             url = f"{self.base_url}/drama/wibusubs?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def adikfilm(self, link: str):
         try:
             url = f"{self.base_url}/film/adikfilm?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def mydramalist_search(self, query: str):
         try:
             url = f"{self.base_url}/drama/search?query={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -192,28 +192,28 @@ class WibuAPI:
     def novelupdates_search(self, query: str):
         try:
             url = f"{self.base_url}/novel/novelupdates/search?query={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def noveltoon_search(self, query: str, language: str):
         try:
             url = f"{self.base_url}/novel/noveltoon/search?query={query}&language={language}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def noveltoon_chapter(self, link: str):
         try:
             url = f"{self.base_url}/novel/noveltoon/chapter?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def noveltoon_read(self, link: str):
         try:
             url = f"{self.base_url}/novel/noveltoon/read?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -221,21 +221,21 @@ class WibuAPI:
     def sukidesuost_search(self, query: str, page: int):
         try:
             url = f"{self.base_url}/music/sukidesuost/search?query={query}&page={page}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def sukidesuost(self, link: str):
         try:
             url = f"{self.base_url}/music/sukidesuost?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def hikarinoakari(self, link: str):
         try:
             url = f"{self.base_url}/music/hikarinoakari?link={link}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -243,14 +243,14 @@ class WibuAPI:
     def google(self, query: str):
         try:
             url = f"{self.base_url}/google/search?query={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def lk21(self, query: str):
         try:
             url = f"{self.base_url}/lk21/search?title={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -258,7 +258,7 @@ class WibuAPI:
     def yandex_reverse_image(self, image_url: str):
         try:
             url = f"{self.base_url}/yandex/reverse_image?image_url={image_url}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -266,7 +266,7 @@ class WibuAPI:
     def anilyrics_search(self, query: str):
         try:
             url = f"{self.base_url}/anime/lyrics/search?query={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -276,14 +276,14 @@ class WibuAPI:
         """
         try:
             url = f"{self.base_url}/anime/lyrics?link={link}&type={type}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def lyrics(self, query: str):
         try:
             url = f"{self.base_url}/lyrics/search?query={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -297,28 +297,28 @@ class WibuAPI:
             )
         try:
             url = f"{self.base_url}/anime/{category}/{tags}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def jav(self):
         try:
             url = f"{self.base_url}/porn/jav"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def porn_gif(self):
         try:
             url = f"{self.base_url}/porn/gif"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def realbooru_nsfw(self):
         try:
             url = f"{self.base_url}/booru/nsfw/rb"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
