@@ -14,7 +14,7 @@ class WibuAPI:
     def lendrive(self, link: str):
         try:
             url = f"{self.base_url}/anime/lendrive?link={link}"
-            return get(url, headers=self.headers, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15)
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
