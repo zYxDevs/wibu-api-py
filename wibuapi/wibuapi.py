@@ -325,21 +325,21 @@ class WibuAPI:
     def gelbooru_nsfw(self):
         try:
             url = f"{self.base_url}/booru/nsfw/gb"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def gelbooru_sfw(self):
         try:
             url = f"{self.base_url}/booru/sfw/gb"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def safebooru_sfw(self):
         try:
             url = f"{self.base_url}/booru/sfw/sb"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -347,42 +347,42 @@ class WibuAPI:
     def giUser(self, uid: int):
         try:
             url = f"{self.base_url}/game/gi/user?uid={uid}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def giWeapon(self, query: str):
         try:
             url = f"{self.base_url}/game/gi/weapon?name={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def giEnemy(self, query: str):
         try:
             url = f"{self.base_url}/game/gi/enemy?name={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def giElement(self, query: str):
         try:
             url = f"{self.base_url}/game/gi/element?name={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def giCharacter(self, query: str):
         try:
             url = f"{self.base_url}/game/gi/character?name={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def giArtifact(self, query: str):
         try:
             url = f"{self.base_url}/game/gi/artifact?name={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -393,7 +393,7 @@ class WibuAPI:
                 tag = f"%23{tag}"
             tag = tag.replace("#", "%23")
             url = f"{self.deprecated_url}/game/brawl/club?clubTag={tag}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -403,14 +403,14 @@ class WibuAPI:
                 tag = f"%23{tag}"
             tag = tag.replace("#", "%23")
             url = f"{self.deprecated_url}/game/brawl/club/member?clubTag={tag}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def brawlEvent(self):
         try:
             url = f"{self.deprecated_url}/game/brawl/event"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -420,7 +420,7 @@ class WibuAPI:
                 tag = f"%23{tag}"
             tag = tag.replace("#", "%23")
             url = f"{self.deprecated_url}/game/brawl/player?playerTag={tag}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -430,7 +430,7 @@ class WibuAPI:
                 tag = f"%23{tag}"
             tag = tag.replace("#", "%23")
             url = f"{self.deprecated_url}/game/brawl/player/log?playerTag={tag}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -438,7 +438,7 @@ class WibuAPI:
     def ud(self, query: str):
         try:
             url = f"{self.base_url}/etc/ud?query={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -447,7 +447,7 @@ class WibuAPI:
         """https://www.youtube.com/watch?v=a1V0UbBNliM"""
         try:
             url = f"{self.base_url}/etc/youtube?url={url}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -455,21 +455,21 @@ class WibuAPI:
         """https://www.facebook.com/groups/247539486825123/permalink/628642412048160"""
         try:
             url = f"{self.base_url}/etc/facebook?url={url}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def device(self, query: str):
         try:
             url = f"{self.base_url}/etc/gsm/search?query={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def slug(self, query: str):
         try:
             url = f"{self.base_url}/etc/gsm/slug?query={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -477,14 +477,14 @@ class WibuAPI:
     def b64encode(self, query: str):
         try:
             url = f"{self.base_url}/encode/base64?query={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def b64decode(self, query: str):
         try:
             url = f"{self.base_url}/decode/base64?query={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -492,21 +492,21 @@ class WibuAPI:
     def ip_lookup(self, ip: str):
         try:
             url = f"{self.base_url}/lookup/ip?ip={ip}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def pypi_search(self, query: str, page: int):
         try:
             url = f"{self.base_url}/pypi/search?query={query}&page={page}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def npm_search(self, query: str):
         try:
             url = f"{self.base_url}/npm/search?query={query}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -514,7 +514,7 @@ class WibuAPI:
     def terabox(self, url: str):
         try:
             url = f"{self.base_url}/bypass/terabox?url={url}"
-            return get(url, timeout=15).json()
+            return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
@@ -522,13 +522,13 @@ class WibuAPI:
     def bard(self, query: str, cookie: str = ""):
         try:
             url = f"{self.base_url}/chatbot/bard?query={query}&cookie={cookie}"
-            return get(url, timeout=50).json()
+            return get(url, headers=self.headers, timeout=50).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     def gpt(self, query: str, gpt_key: str = ""):
         try:
             url = f"{self.base_url}/chatbot/gpt?query={query}&gpt_key={gpt_key}"
-            return get(url, timeout=50).json()
+            return get(url, headers=self.headers, timeout=50).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
