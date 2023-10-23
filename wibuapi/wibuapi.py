@@ -6,8 +6,8 @@ from requests import get
 
 class WibuAPI:
     def __init__(self, apikey: str = None):
-        self.base_url = "https://wibu-api.eu.org"
-        self.deprecated_url = "https://api.wibu-api.eu.org"
+        self.base_url = "https://wibu-api.eu.org/api"
+        self.deprecated_url = "https://api.wibu-api.eu.org/api"
         self.headers = {"x-wibu-key": apikey}
 
     # Anime, Donghua, Hentai
