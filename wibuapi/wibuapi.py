@@ -288,15 +288,11 @@ class WibuAPI:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     # Anipics, Porn, JAV, Booru
-    def anipics(self, category: str, tags: str):
-        if category not in ("nsfw"):
-            return f"Category {category} is unknown. Available category: nsfw"
-        if tags not in ("ahegao", "waifu", "neko", "trap", "bj"):
-            return (
-                f"Tags {tags} is unknown. Available tags: ahegao, waifu, neko, trap, bj"
-            )
+    def anipics(self, tags: str, category: str):
+        if tags not in ("sfw", "nsfw"):
+            return f"Tags {tags} is unknown. Available tags: sfw, nsfw"
         try:
-            url = f"{self.base_url}/anime/{category}/{tags}"
+            url = f"{self.base_url}/animepics/{tags}/{category}"
             return get(url, headers=self.headers, timeout=15).json()
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
