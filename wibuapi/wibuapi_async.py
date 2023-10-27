@@ -288,15 +288,11 @@ class AsyncWibuAPI:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
 
     # Anipics, Porn, JAV, Booru
-    async def anipics(self, category: str, tags: str):
-        if category not in ("nsfw"):
-            return f"Category {category} is unknown. Available category: nsfw"
-        if tags not in ("ahegao", "waifu", "neko", "trap", "bj"):
-            return (
-                f"Tags {tags} is unknown. Available tags: ahegao, waifu, neko, trap, bj"
-            )
+    async def anipics(self, tags: str, category: str):
+        if tags not in ("sfw", "nsfw"):
+            return f"Tags {tags} is unknown. Available tags: sfw, nsfw"
         try:
-            url = f"{self.base_url}/anime/{category}/{tags}"
+            url = f"{self.base_url}/anipics/{tags}/{category}"
             return await getwibu(url, headers=self.headers, timeout=15)
         except Exception as e:
             return f"ERROR: {str(e)}. Report to https://t.me/YBotsSupport"
