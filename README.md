@@ -5,6 +5,8 @@ _Official Python Wrapper for Wibu API._
 
 [![wibu-api-py](https://socialify.git.ci/zYxDevs/wibu-api-py/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&language=1&logo=https%3A%2F%2F1000logos.net%2Fwp-content%2Fuploads%2F2021%2F04%2FTelegram-logo.png&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Light)](https://t.me/SpreadNetworks)
 
+[![Repobeats](https://repobeats.axiom.co/api/embed/364ba56848b827421280d052516d543e9515cb2e.svg "Repobeats analytics image")](https://t.me/WibuAPIBot)
+
 ## How to install
 #### Use pip
 ```
