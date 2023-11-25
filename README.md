@@ -33,14 +33,14 @@ _There's many useful features in bot but it required big resource, so i make it 
 
 **Paid Features:**
 
-- [x] All features on WibuAPI
+- [x] Everything on WibuAPI
 - [x] LH Translation ziper
 - [x] Shinigami ziper
 - [x] Worldmanhwas ziper
 - [x] Maid Manga ziper
 - [x] Mangayaro ziper
 - [x] Cosmicscans ziper
-- [x] nHentai ziper
+- [x] nHentai, nHentai.to, Hentaifox, AsmHentai, Pururin ziper
 - [x] Sheakomik, Sheamanga ziper
 - [x] Komikindo.info ziper
 - [x] Mikoroku ziper
@@ -48,6 +48,9 @@ _There's many useful features in bot but it required big resource, so i make it 
 - [x] OnlyWaifu ziper
 - [x] Manhwatop ziper
 - [x] Manhuafast ziper
+- [x] Drakescans ziper
+- [x] Omegascans ziper
+- [x] Telegra.ph ziper
 - [x] Onlylama
   - [x] Download link scraper
   - [x] Photo album ziper
@@ -57,6 +60,10 @@ _There's many useful features in bot but it required big resource, so i make it 
 - [x] Javhd
   - [x] Search parser
   - [x] Download link scraper
+- [x] Rule34 downloader
+- [x] Bunkrr.su downloader
+- [x] NudeCosplayGirl ziper
+- [x] Mirrored scraper
 - [x] Other incoming features
 
 [![WibuAPI Bot](https://img.shields.io/badge/WibuAPI-Bot-blue?&logo=telegram)](https://wibuapibot.t.me)
