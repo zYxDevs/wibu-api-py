@@ -6,7 +6,7 @@ from requests import get
 
 class Etc:
     def __init__(self):
-        self.base_url = "https://wibu-api.eu.org/api"
+        self.base_url = "https://weebsapi.onrender.com/api"
         self.deprecated_url = "https://api.wibu-api.eu.org/api"
 
     def stats(self):
