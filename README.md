@@ -5,6 +5,8 @@ _Official Python Wrapper for Wibu API._
 
 [![wibu-api-py](https://socialify.git.ci/zYxDevs/wibu-api-py/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&language=1&logo=https%3A%2F%2F1000logos.net%2Fwp-content%2Fuploads%2F2021%2F04%2FTelegram-logo.png&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Light)](https://t.me/SpreadNetworks)
 
+[![Repobeats](https://repobeats.axiom.co/api/embed/364ba56848b827421280d052516d543e9515cb2e.svg "Repobeats analytics image")](https://t.me/WibuAPIBot)
+
 ## How to install
 #### Use pip
 ```
@@ -31,14 +33,14 @@ _There's many useful features in bot but it required big resource, so i make it 
 
 **Paid Features:**
 
-- [x] All features on WibuAPI
+- [x] Everything on WibuAPI
 - [x] LH Translation ziper
 - [x] Shinigami ziper
 - [x] Worldmanhwas ziper
 - [x] Maid Manga ziper
 - [x] Mangayaro ziper
 - [x] Cosmicscans ziper
-- [x] nHentai ziper
+- [x] nHentai, nHentai.to, Hentaifox, AsmHentai, Pururin ziper
 - [x] Sheakomik, Sheamanga ziper
 - [x] Komikindo.info ziper
 - [x] Mikoroku ziper
@@ -46,6 +48,9 @@ _There's many useful features in bot but it required big resource, so i make it 
 - [x] OnlyWaifu ziper
 - [x] Manhwatop ziper
 - [x] Manhuafast ziper
+- [x] Drakescans ziper
+- [x] Omegascans ziper
+- [x] Telegra.ph ziper
 - [x] Onlylama
   - [x] Download link scraper
   - [x] Photo album ziper
@@ -55,6 +60,10 @@ _There's many useful features in bot but it required big resource, so i make it 
 - [x] Javhd
   - [x] Search parser
   - [x] Download link scraper
+- [x] Rule34 downloader
+- [x] Bunkrr.su downloader
+- [x] NudeCosplayGirl ziper
+- [x] Mirrored scraper
 - [x] Other incoming features
 
 [![WibuAPI Bot](https://img.shields.io/badge/WibuAPI-Bot-blue?&logo=telegram)](https://wibuapibot.t.me)
