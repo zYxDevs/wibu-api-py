@@ -6,7 +6,7 @@ with open("README.md", "r") as txt:
 
 setuptools.setup(
     name="wibuapi",
-    version="0.1.7",
+    version="0.1.8",
     description="Official Sync and Async Python Wrapper for Wibu API.",
     long_description=long_description,
     long_description_content_type="text/markdown",
