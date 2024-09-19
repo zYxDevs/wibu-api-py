@@ -5,8 +5,8 @@ from requests import get
 
 
 class Etc:
-    def __init__(self):
-        self.base_url = "https://wibu-api.eu.org/api"
+    def __init__(self, base_url: str):
+        self.base_url = base_url
         self.deprecated_url = "https://api.wibu-api.eu.org/api"
 
     def stats(self):
